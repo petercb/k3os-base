@@ -1,0 +1,3600 @@
+---
+schemaVersion: '2.0.0'
+
+fileExistenceTests:
+  - name: sudo
+    path: /usr/src/image/bin/sudo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rmdir
+    path: /usr/src/image/bin/rmdir
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mktemp
+    path: /usr/src/image/bin/mktemp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: udhcpc6
+    path: /usr/src/image/bin/udhcpc6
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: csplit
+    path: /usr/src/image/bin/csplit
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: uname
+    path: /usr/src/image/bin/uname
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsns
+    path: /usr/src/image/bin/lsns
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: who
+    path: /usr/src/image/bin/who
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unlzma
+    path: /usr/src/image/bin/unlzma
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: 'false'
+    path: /usr/src/image/bin/false
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: stty
+    path: /usr/src/image/bin/stty
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: toe
+    path: /usr/src/image/bin/toe
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tail
+    path: /usr/src/image/bin/tail
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chattr
+    path: /usr/src/image/bin/chattr
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pstree
+    path: /usr/src/image/bin/pstree
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mv
+    path: /usr/src/image/bin/mv
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: bbconfig
+    path: /usr/src/image/bin/bbconfig
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: econftool
+    path: /usr/src/image/bin/econftool
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pwd
+    path: /usr/src/image/bin/pwd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: zcat
+    path: /usr/src/image/bin/zcat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ftpget
+    path: /usr/src/image/bin/ftpget
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xzdiff
+    path: /usr/src/image/bin/xzdiff
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lddtree
+    path: /usr/src/image/bin/lddtree
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: choom
+    path: /usr/src/image/bin/choom
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: scanelf
+    path: /usr/src/image/bin/scanelf
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsof
+    path: /usr/src/image/bin/lsof
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: setpriv
+    path: /usr/src/image/bin/setpriv
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: whoami
+    path: /usr/src/image/bin/whoami
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sha512sum
+    path: /usr/src/image/bin/sha512sum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mknod
+    path: /usr/src/image/bin/mknod
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vdir
+    path: /usr/src/image/bin/vdir
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: test
+    path: /usr/src/image/bin/test
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzmore
+    path: /usr/src/image/bin/lzmore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xargs
+    path: /usr/src/image/bin/xargs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: killall
+    path: /usr/src/image/bin/killall
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: conspy
+    path: /usr/src/image/bin/conspy
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: factor
+    path: /usr/src/image/bin/factor
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unshare
+    path: /usr/src/image/bin/unshare
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sudoedit
+    path: /usr/src/image/bin/sudoedit
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: w
+    path: /usr/src/image/bin/w
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-file
+    path: /usr/src/image/bin/grub-file
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dirname
+    path: /usr/src/image/bin/dirname
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: script
+    path: /usr/src/image/bin/script
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsipc
+    path: /usr/src/image/bin/lsipc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-glue-efi
+    path: /usr/src/image/bin/grub-glue-efi
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chrt
+    path: /usr/src/image/bin/chrt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cryptpw
+    path: /usr/src/image/bin/cryptpw
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: hv_kvp_daemon
+    path: /usr/src/image/bin/hv_kvp_daemon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tload
+    path: /usr/src/image/bin/tload
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: gdbus
+    path: /usr/src/image/bin/gdbus
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sha1sum
+    path: /usr/src/image/bin/sha1sum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ps
+    path: /usr/src/image/bin/ps
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsusb
+    path: /usr/src/image/bin/lsusb
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: prlimit
+    path: /usr/src/image/bin/prlimit
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: eject
+    path: /usr/src/image/bin/eject
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ed
+    path: /usr/src/image/bin/ed
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: modinfo
+    path: /usr/src/image/bin/modinfo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tset
+    path: /usr/src/image/bin/tset
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vim
+    path: /usr/src/image/bin/vim
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pr
+    path: /usr/src/image/bin/pr
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sh
+    path: /usr/src/image/bin/sh
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: split
+    path: /usr/src/image/bin/split
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: more
+    path: /usr/src/image/bin/more
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rvim
+    path: /usr/src/image/bin/rvim
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fold
+    path: /usr/src/image/bin/fold
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: kmod
+    path: /usr/src/image/bin/kmod
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: reset
+    path: /usr/src/image/bin/reset
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: b2sum
+    path: /usr/src/image/bin/b2sum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ex
+    path: /usr/src/image/bin/ex
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tftp
+    path: /usr/src/image/bin/tftp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-script-check
+    path: /usr/src/image/bin/grub-script-check
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: gzip
+    path: /usr/src/image/bin/gzip
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sha384sum
+    path: /usr/src/image/bin/sha384sum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xzcmp
+    path: /usr/src/image/bin/xzcmp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: runcon
+    path: /usr/src/image/bin/runcon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wg-quick
+    path: /usr/src/image/bin/wg-quick
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: microcom
+    path: /usr/src/image/bin/microcom
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: watch
+    path: /usr/src/image/bin/watch
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: egrep
+    path: /usr/src/image/bin/egrep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: uniq
+    path: /usr/src/image/bin/uniq
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: column
+    path: /usr/src/image/bin/column
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pkill
+    path: /usr/src/image/bin/pkill
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rm
+    path: /usr/src/image/bin/rm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: base32
+    path: /usr/src/image/bin/base32
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: printf
+    path: /usr/src/image/bin/printf
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rc-status
+    path: /usr/src/image/bin/rc-status
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tcpsvd
+    path: /usr/src/image/bin/tcpsvd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzegrep
+    path: /usr/src/image/bin/lzegrep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: getopt
+    path: /usr/src/image/bin/getopt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: realpath
+    path: /usr/src/image/bin/realpath
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ssh-pkcs11-helper
+    path: /usr/src/image/bin/ssh-pkcs11-helper
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: makemime
+    path: /usr/src/image/bin/makemime
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzgrep
+    path: /usr/src/image/bin/lzgrep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: curl
+    path: /usr/src/image/bin/curl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: setterm
+    path: /usr/src/image/bin/setterm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ping6
+    path: /usr/src/image/bin/ping6
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cut
+    path: /usr/src/image/bin/cut
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pki
+    path: /usr/src/image/bin/pki
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: date
+    path: /usr/src/image/bin/date
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: gio
+    path: /usr/src/image/bin/gio
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fallocate
+    path: /usr/src/image/bin/fallocate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dbus-cleanup-sockets
+    path: /usr/src/image/bin/dbus-cleanup-sockets
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: telnet
+    path: /usr/src/image/bin/telnet
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: du
+    path: /usr/src/image/bin/du
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pipe_progress
+    path: /usr/src/image/bin/pipe_progress
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: reformime
+    path: /usr/src/image/bin/reformime
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: whereis
+    path: /usr/src/image/bin/whereis
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ssh
+    path: /usr/src/image/bin/ssh
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ptx
+    path: /usr/src/image/bin/ptx
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsmod
+    path: /usr/src/image/bin/lsmod
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzfgrep
+    path: /usr/src/image/bin/lzfgrep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-editenv
+    path: /usr/src/image/bin/grub-editenv
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dbus-uuidgen
+    path: /usr/src/image/bin/dbus-uuidgen
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: uudecode
+    path: /usr/src/image/bin/uudecode
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rngtest
+    path: /usr/src/image/bin/rngtest
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chmod
+    path: /usr/src/image/bin/chmod
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dumpkmap
+    path: /usr/src/image/bin/dumpkmap
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzopcat
+    path: /usr/src/image/bin/lzopcat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dbus-daemon
+    path: /usr/src/image/bin/dbus-daemon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tput
+    path: /usr/src/image/bin/tput
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sha256sum
+    path: /usr/src/image/bin/sha256sum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: strace
+    path: /usr/src/image/bin/strace
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nslookup
+    path: /usr/src/image/bin/nslookup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: usleep
+    path: /usr/src/image/bin/usleep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzmainfo
+    path: /usr/src/image/bin/lzmainfo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: bomtool
+    path: /usr/src/image/bin/bomtool
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: logname
+    path: /usr/src/image/bin/logname
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cvtsudoers
+    path: /usr/src/image/bin/cvtsudoers
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: which
+    path: /usr/src/image/bin/which
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pathchk
+    path: /usr/src/image/bin/pathchk
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: isosize
+    path: /usr/src/image/bin/isosize
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: bunzip2
+    path: /usr/src/image/bin/bunzip2
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: colcrt
+    path: /usr/src/image/bin/colcrt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fgrep
+    path: /usr/src/image/bin/fgrep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: showkey
+    path: /usr/src/image/bin/showkey
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-fstest
+    path: /usr/src/image/bin/grub-fstest
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: umount
+    path: /usr/src/image/bin/umount
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: groups
+    path: /usr/src/image/bin/groups
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lscpu
+    path: /usr/src/image/bin/lscpu
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: captoinfo
+    path: /usr/src/image/bin/captoinfo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: hostname
+    path: /usr/src/image/bin/hostname
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: traceroute
+    path: /usr/src/image/bin/traceroute
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: df
+    path: /usr/src/image/bin/df
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rsync-ssl
+    path: /usr/src/image/bin/rsync-ssl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pwdx
+    path: /usr/src/image/bin/pwdx
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fdflush
+    path: /usr/src/image/bin/fdflush
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: namei
+    path: /usr/src/image/bin/namei
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wdctl
+    path: /usr/src/image/bin/wdctl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: scp
+    path: /usr/src/image/bin/scp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tac
+    path: /usr/src/image/bin/tac
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sudoreplay
+    path: /usr/src/image/bin/sudoreplay
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: taskset
+    path: /usr/src/image/bin/taskset
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: crontab
+    path: /usr/src/image/bin/crontab
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkdir
+    path: /usr/src/image/bin/mkdir
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pidof
+    path: /usr/src/image/bin/pidof
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cp
+    path: /usr/src/image/bin/cp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: setkeycodes
+    path: /usr/src/image/bin/setkeycodes
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sync
+    path: /usr/src/image/bin/sync
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: bzcat
+    path: /usr/src/image/bin/bzcat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ssh-agent
+    path: /usr/src/image/bin/ssh-agent
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: setsid
+    path: /usr/src/image/bin/setsid
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: shred
+    path: /usr/src/image/bin/shred
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: randstat
+    path: /usr/src/image/bin/randstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: last
+    path: /usr/src/image/bin/last
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzma
+    path: /usr/src/image/bin/lzma
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-kbdcomp
+    path: /usr/src/image/bin/grub-kbdcomp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-xml
+    path: /usr/src/image/bin/iptables-xml
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsirq
+    path: /usr/src/image/bin/lsirq
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: infocmp
+    path: /usr/src/image/bin/infocmp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: 'true'
+    path: /usr/src/image/bin/true
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cat
+    path: /usr/src/image/bin/cat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-mkpasswd-pbkdf2
+    path: /usr/src/image/bin/grub-mkpasswd-pbkdf2
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: paste
+    path: /usr/src/image/bin/paste
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-mkstandalone
+    path: /usr/src/image/bin/grub-mkstandalone
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: uuidgen
+    path: /usr/src/image/bin/uuidgen
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pscan
+    path: /usr/src/image/bin/pscan
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsfd
+    path: /usr/src/image/bin/lsfd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: openssl
+    path: /usr/src/image/bin/openssl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xzcat
+    path: /usr/src/image/bin/xzcat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: truncate
+    path: /usr/src/image/bin/truncate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: timeout
+    path: /usr/src/image/bin/timeout
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tar
+    path: /usr/src/image/bin/tar
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: openvt
+    path: /usr/src/image/bin/openvt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dbus-update-activation-environment
+    path: /usr/src/image/bin/dbus-update-activation-environment
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ssl_client
+    path: /usr/src/image/bin/ssl_client
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vlock
+    path: /usr/src/image/bin/vlock
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nsenter
+    path: /usr/src/image/bin/nsenter
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: expand
+    path: /usr/src/image/bin/expand
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: basename
+    path: /usr/src/image/bin/basename
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: uuencode
+    path: /usr/src/image/bin/uuencode
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzmadec
+    path: /usr/src/image/bin/lzmadec
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xxd
+    path: /usr/src/image/bin/xxd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dnsdomainname
+    path: /usr/src/image/bin/dnsdomainname
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sensors
+    path: /usr/src/image/bin/sensors
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dbus-monitor
+    path: /usr/src/image/bin/dbus-monitor
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: install
+    path: /usr/src/image/bin/install
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xzegrep
+    path: /usr/src/image/bin/xzegrep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: flock
+    path: /usr/src/image/bin/flock
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: free
+    path: /usr/src/image/bin/free
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: join
+    path: /usr/src/image/bin/join
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tic
+    path: /usr/src/image/bin/tic
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: deallocvt
+    path: /usr/src/image/bin/deallocvt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: numfmt
+    path: /usr/src/image/bin/numfmt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: qemu-ga
+    path: /usr/src/image/bin/qemu-ga
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ldd
+    path: /usr/src/image/bin/ldd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chgrp
+    path: /usr/src/image/bin/chgrp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vi
+    path: /usr/src/image/bin/vi
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fmt
+    path: /usr/src/image/bin/fmt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wall
+    path: /usr/src/image/bin/wall
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: bash
+    path: /usr/src/image/bin/bash
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ionice
+    path: /usr/src/image/bin/ionice
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: blkdiscard
+    path: /usr/src/image/bin/blkdiscard
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: netstat
+    path: /usr/src/image/bin/netstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nmeter
+    path: /usr/src/image/bin/nmeter
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fatattr
+    path: /usr/src/image/bin/fatattr
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: udevadm
+    path: /usr/src/image/bin/udevadm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-syslinux2cfg
+    path: /usr/src/image/bin/grub-syslinux2cfg
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dircolors
+    path: /usr/src/image/bin/dircolors
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: renice
+    path: /usr/src/image/bin/renice
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzop
+    path: /usr/src/image/bin/lzop
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: head
+    path: /usr/src/image/bin/head
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cal
+    path: /usr/src/image/bin/cal
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsmem
+    path: /usr/src/image/bin/lsmem
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lslocks
+    path: /usr/src/image/bin/lslocks
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: logger
+    path: /usr/src/image/bin/logger
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: clear
+    path: /usr/src/image/bin/clear
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fuser
+    path: /usr/src/image/bin/fuser
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pkgconf
+    path: /usr/src/image/bin/pkgconf
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unlink
+    path: /usr/src/image/bin/unlink
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: c_rehash
+    path: /usr/src/image/bin/c_rehash
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: traceroute6
+    path: /usr/src/image/bin/traceroute6
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pinky
+    path: /usr/src/image/bin/pinky
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ash
+    path: /usr/src/image/bin/ash
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mcookie
+    path: /usr/src/image/bin/mcookie
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: findmnt
+    path: /usr/src/image/bin/findmnt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: touch
+    path: /usr/src/image/bin/touch
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xzless
+    path: /usr/src/image/bin/xzless
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dir
+    path: /usr/src/image/bin/dir
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tsort
+    path: /usr/src/image/bin/tsort
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: basenc
+    path: /usr/src/image/bin/basenc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: glib-compile-schemas
+    path: /usr/src/image/bin/glib-compile-schemas
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sleep
+    path: /usr/src/image/bin/sleep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sha224sum
+    path: /usr/src/image/bin/sha224sum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: gapplication
+    path: /usr/src/image/bin/gapplication
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vmtoolsd
+    path: /usr/src/image/bin/vmtoolsd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xzdec
+    path: /usr/src/image/bin/xzdec
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: uptime
+    path: /usr/src/image/bin/uptime
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nc
+    path: /usr/src/image/bin/nc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pmap
+    path: /usr/src/image/bin/pmap
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: volname
+    path: /usr/src/image/bin/volname
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: od
+    path: /usr/src/image/bin/od
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tabs
+    path: /usr/src/image/bin/tabs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rename
+    path: /usr/src/image/bin/rename
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dbus-run-session
+    path: /usr/src/image/bin/dbus-run-session
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dc
+    path: /usr/src/image/bin/dc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: time
+    path: /usr/src/image/bin/time
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: 'yes'
+    path: /usr/src/image/bin/yes
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: linux64
+    path: /usr/src/image/bin/linux64
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-mkrescue
+    path: /usr/src/image/bin/grub-mkrescue
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mesg
+    path: /usr/src/image/bin/mesg
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: scriptreplay
+    path: /usr/src/image/bin/scriptreplay
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pgrep
+    path: /usr/src/image/bin/pgrep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wg
+    path: /usr/src/image/bin/wg
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: busybox-extras
+    path: /usr/src/image/bin/busybox-extras
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: md5sum
+    path: /usr/src/image/bin/md5sum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chown
+    path: /usr/src/image/bin/chown
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: linux32
+    path: /usr/src/image/bin/linux32
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dbus-test-tool
+    path: /usr/src/image/bin/dbus-test-tool
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzcat
+    path: /usr/src/image/bin/lzcat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkpasswd
+    path: /usr/src/image/bin/mkpasswd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pkg-config
+    path: /usr/src/image/bin/pkg-config
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: jq
+    path: /usr/src/image/bin/jq
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: run-parts
+    path: /usr/src/image/bin/run-parts
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: look
+    path: /usr/src/image/bin/look
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: hostid
+    path: /usr/src/image/bin/hostid
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sed
+    path: /usr/src/image/bin/sed
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: readlink
+    path: /usr/src/image/bin/readlink
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unix2dos
+    path: /usr/src/image/bin/unix2dos
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: bzip2
+    path: /usr/src/image/bin/bzip2
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: bc
+    path: /usr/src/image/bin/bc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unzip
+    path: /usr/src/image/bin/unzip
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-mkimage
+    path: /usr/src/image/bin/grub-mkimage
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unxz
+    path: /usr/src/image/bin/unxz
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: systool
+    path: /usr/src/image/bin/systool
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: su
+    path: /usr/src/image/bin/su
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xzgrep
+    path: /usr/src/image/bin/xzgrep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: gunzip
+    path: /usr/src/image/bin/gunzip
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-render-label
+    path: /usr/src/image/bin/grub-render-label
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: busybox
+    path: /usr/src/image/bin/busybox
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xzfgrep
+    path: /usr/src/image/bin/xzfgrep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ssh-keygen
+    path: /usr/src/image/bin/ssh-keygen
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ln
+    path: /usr/src/image/bin/ln
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tee
+    path: /usr/src/image/bin/tee
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: col
+    path: /usr/src/image/bin/col
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: scriptlive
+    path: /usr/src/image/bin/scriptlive
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: shuf
+    path: /usr/src/image/bin/shuf
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vmstat
+    path: /usr/src/image/bin/vmstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mpstat
+    path: /usr/src/image/bin/mpstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzcmp
+    path: /usr/src/image/bin/lzcmp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: uname26
+    path: /usr/src/image/bin/uname26
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ssh-add
+    path: /usr/src/image/bin/ssh-add
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: setserial
+    path: /usr/src/image/bin/setserial
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-mklayout
+    path: /usr/src/image/bin/grub-mklayout
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sum
+    path: /usr/src/image/bin/sum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: comm
+    path: /usr/src/image/bin/comm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: hv_fcopy_daemon
+    path: /usr/src/image/bin/hv_fcopy_daemon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wget
+    path: /usr/src/image/bin/wget
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ls
+    path: /usr/src/image/bin/ls
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ipcmk
+    path: /usr/src/image/bin/ipcmk
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: base64
+    path: /usr/src/image/bin/base64
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: seq
+    path: /usr/src/image/bin/seq
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ul
+    path: /usr/src/image/bin/ul
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: passwd
+    path: /usr/src/image/bin/passwd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: arch
+    path: /usr/src/image/bin/arch
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dos2unix
+    path: /usr/src/image/bin/dos2unix
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wc
+    path: /usr/src/image/bin/wc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsattr
+    path: /usr/src/image/bin/lsattr
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: stdbuf
+    path: /usr/src/image/bin/stdbuf
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tr
+    path: /usr/src/image/bin/tr
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: uuidparse
+    path: /usr/src/image/bin/uuidparse
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: connmanctl
+    path: /usr/src/image/bin/connmanctl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: gsettings
+    path: /usr/src/image/bin/gsettings
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rsync
+    path: /usr/src/image/bin/rsync
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nice
+    path: /usr/src/image/bin/nice
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: whois
+    path: /usr/src/image/bin/whois
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: irqtop
+    path: /usr/src/image/bin/irqtop
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: hd
+    path: /usr/src/image/bin/hd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grep
+    path: /usr/src/image/bin/grep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sha3sum
+    path: /usr/src/image/bin/sha3sum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xzmore
+    path: /usr/src/image/bin/xzmore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: find
+    path: /usr/src/image/bin/find
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unlzop
+    path: /usr/src/image/bin/unlzop
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chvt
+    path: /usr/src/image/bin/chvt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cmp
+    path: /usr/src/image/bin/cmp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iostat
+    path: /usr/src/image/bin/iostat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: hardlink
+    path: /usr/src/image/bin/hardlink
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ping
+    path: /usr/src/image/bin/ping
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: getconf
+    path: /usr/src/image/bin/getconf
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: colrm
+    path: /usr/src/image/bin/colrm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: utmpdump
+    path: /usr/src/image/bin/utmpdump
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: setarch
+    path: /usr/src/image/bin/setarch
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iconv
+    path: /usr/src/image/bin/iconv
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ftpput
+    path: /usr/src/image/bin/ftpput
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: login
+    path: /usr/src/image/bin/login
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ipcs
+    path: /usr/src/image/bin/ipcs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: coreutils
+    path: /usr/src/image/bin/coreutils
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ssh-copy-id
+    path: /usr/src/image/bin/ssh-copy-id
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: resize
+    path: /usr/src/image/bin/resize
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: link
+    path: /usr/src/image/bin/link
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pwait
+    path: /usr/src/image/bin/pwait
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: users
+    path: /usr/src/image/bin/users
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: diff
+    path: /usr/src/image/bin/diff
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unexpand
+    path: /usr/src/image/bin/unexpand
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzless
+    path: /usr/src/image/bin/lzless
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ipcrm
+    path: /usr/src/image/bin/ipcrm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: printenv
+    path: /usr/src/image/bin/printenv
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ipcalc
+    path: /usr/src/image/bin/ipcalc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: view
+    path: /usr/src/image/bin/view
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chcon
+    path: /usr/src/image/bin/chcon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chmem
+    path: /usr/src/image/bin/chmem
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: env
+    path: /usr/src/image/bin/env
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dmesg
+    path: /usr/src/image/bin/dmesg
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mountpoint
+    path: /usr/src/image/bin/mountpoint
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rev
+    path: /usr/src/image/bin/rev
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsync
+    path: /usr/src/image/bin/fsync
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: less
+    path: /usr/src/image/bin/less
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsblk
+    path: /usr/src/image/bin/lsblk
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: kill
+    path: /usr/src/image/bin/kill
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fincore
+    path: /usr/src/image/bin/fincore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dbus-send
+    path: /usr/src/image/bin/dbus-send
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: echo
+    path: /usr/src/image/bin/echo
+    shouldExist: true
+  - name: cksum
+    path: /usr/src/image/bin/cksum
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nproc
+    path: /usr/src/image/bin/nproc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: gio-querymodules
+    path: /usr/src/image/bin/gio-querymodules
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfifo
+    path: /usr/src/image/bin/mkfifo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cpio
+    path: /usr/src/image/bin/cpio
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: kbd_mode
+    path: /usr/src/image/bin/kbd_mode
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dumpleases
+    path: /usr/src/image/bin/dumpleases
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: hexdump
+    path: /usr/src/image/bin/hexdump
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: expr
+    path: /usr/src/image/bin/expr
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: infotocap
+    path: /usr/src/image/bin/infotocap
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-mkrelpath
+    path: /usr/src/image/bin/grub-mkrelpath
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: beep
+    path: /usr/src/image/bin/beep
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsscsi
+    path: /usr/src/image/bin/lsscsi
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tty
+    path: /usr/src/image/bin/tty
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: strace-log-merge
+    path: /usr/src/image/bin/strace-log-merge
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nohup
+    path: /usr/src/image/bin/nohup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sort
+    path: /usr/src/image/bin/sort
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ttysize
+    path: /usr/src/image/bin/ttysize
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lzdiff
+    path: /usr/src/image/bin/lzdiff
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: hv_vss_daemon
+    path: /usr/src/image/bin/hv_vss_daemon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sftp
+    path: /usr/src/image/bin/sftp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mount
+    path: /usr/src/image/bin/mount
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: id
+    path: /usr/src/image/bin/id
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: slabtop
+    path: /usr/src/image/bin/slabtop
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: stat
+    path: /usr/src/image/bin/stat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ssh-keyscan
+    path: /usr/src/image/bin/ssh-keyscan
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: awk
+    path: /usr/src/image/bin/awk
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-mknetdir
+    path: /usr/src/image/bin/grub-mknetdir
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rview
+    path: /usr/src/image/bin/rview
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: top
+    path: /usr/src/image/bin/top
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xz
+    path: /usr/src/image/bin/xz
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: getent
+    path: /usr/src/image/bin/getent
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: uclampset
+    path: /usr/src/image/bin/uclampset
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nl
+    path: /usr/src/image/bin/nl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: strings
+    path: /usr/src/image/bin/strings
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dd
+    path: /usr/src/image/bin/dd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: access.conf
+    path: /usr/src/image/etc/security/access.conf
+    shouldExist: true
+  - name: time.conf
+    path: /usr/src/image/etc/security/time.conf
+    shouldExist: true
+  - name: namespace.conf
+    path: /usr/src/image/etc/security/namespace.conf
+    shouldExist: true
+  - name: group.conf
+    path: /usr/src/image/etc/security/group.conf
+    shouldExist: true
+  - name: namespace.init
+    path: /usr/src/image/etc/security/namespace.init
+    shouldExist: true
+  - name: limits.conf
+    path: /usr/src/image/etc/security/limits.conf
+    shouldExist: true
+  - name: pam_env.conf
+    path: /usr/src/image/etc/security/pam_env.conf
+    shouldExist: true
+  - name: faillock.conf
+    path: /usr/src/image/etc/security/faillock.conf
+    shouldExist: true
+  - name: securetty
+    path: /usr/src/image/etc/securetty
+    shouldExist: true
+  - name: connman main.conf
+    path: /usr/src/image/etc/connman/main.conf
+    shouldExist: true
+  - name: conntrackd.conf
+    path: /usr/src/image/etc/conntrackd/conntrackd.conf
+    shouldExist: true
+  - name: idmapd.conf
+    path: /usr/src/image/etc/idmapd.conf
+    shouldExist: true
+  - name: mtab
+    path: /usr/src/image/etc/mtab
+    shouldExist: true
+  - name: shadow-
+    path: /usr/src/image/etc/shadow-
+    shouldExist: true
+  - name: system.conf
+    path: /usr/src/image/etc/dbus-1/system.conf
+    shouldExist: true
+  - name: session.conf
+    path: /usr/src/image/etc/dbus-1/session.conf
+    shouldExist: true
+  - name: sudoers
+    path: /usr/src/image/etc/sudoers
+    shouldExist: true
+  - name: sudo_logsrvd.conf
+    path: /usr/src/image/etc/sudo_logsrvd.conf
+    shouldExist: true
+  - name: protocols
+    path: /usr/src/image/etc/protocols
+    shouldExist: true
+  - name: passwd-
+    path: /usr/src/image/etc/passwd-
+    shouldExist: true
+  - name: shells
+    path: /usr/src/image/etc/shells
+    shouldExist: true
+  - name: inittab
+    path: /usr/src/image/etc/inittab
+    shouldExist: true
+  - name: bindresvport.blacklist
+    path: /usr/src/image/etc/bindresvport.blacklist
+    shouldExist: true
+  - name: sudo.conf
+    path: /usr/src/image/etc/sudo.conf
+    shouldExist: true
+  - name: rsyncd.conf
+    path: /usr/src/image/etc/rsyncd.conf
+    shouldExist: true
+  - name: base.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/base.modules
+    shouldExist: true
+  - name: nvme.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/nvme.modules
+    shouldExist: true
+  - name: ata.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/ata.modules
+    shouldExist: true
+  - name: dhcp.files
+    path: /usr/src/image/etc/mkinitfs/features.d/dhcp.files
+    shouldExist: true
+  - name: btrfs.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/btrfs.modules
+    shouldExist: true
+  - name: mmc.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/mmc.modules
+    shouldExist: true
+  - name: reiserfs.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/reiserfs.modules
+    shouldExist: true
+  - name: lvm.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/lvm.modules
+    shouldExist: true
+  - name: ext3.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/ext3.modules
+    shouldExist: true
+  - name: kms.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/kms.modules
+    shouldExist: true
+  - name: ubifs.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/ubifs.modules
+    shouldExist: true
+  - name: qeth.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/qeth.modules
+    shouldExist: true
+  - name: cryptsetup.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/cryptsetup.modules
+    shouldExist: true
+  - name: btrfs.files
+    path: /usr/src/image/etc/mkinitfs/features.d/btrfs.files
+    shouldExist: true
+  - name: squashfs.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/squashfs.modules
+    shouldExist: true
+  - name: zfcp.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/zfcp.modules
+    shouldExist: true
+  - name: nbd.files
+    path: /usr/src/image/etc/mkinitfs/features.d/nbd.files
+    shouldExist: true
+  - name: f2fs.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/f2fs.modules
+    shouldExist: true
+  - name: jfs.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/jfs.modules
+    shouldExist: true
+  - name: ena.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/ena.modules
+    shouldExist: true
+  - name: https.files
+    path: /usr/src/image/etc/mkinitfs/features.d/https.files
+    shouldExist: true
+  - name: ocfs2.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/ocfs2.modules
+    shouldExist: true
+  - name: ext2.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/ext2.modules
+    shouldExist: true
+  - name: raid.files
+    path: /usr/src/image/etc/mkinitfs/features.d/raid.files
+    shouldExist: true
+  - name: cdrom.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/cdrom.modules
+    shouldExist: true
+  - name: raid.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/raid.modules
+    shouldExist: true
+  - name: xfs.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/xfs.modules
+    shouldExist: true
+  - name: dhcp.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/dhcp.modules
+    shouldExist: true
+  - name: floppy.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/floppy.modules
+    shouldExist: true
+  - name: zfs.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/zfs.modules
+    shouldExist: true
+  - name: scsi.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/scsi.modules
+    shouldExist: true
+  - name: xfs.files
+    path: /usr/src/image/etc/mkinitfs/features.d/xfs.files
+    shouldExist: true
+  - name: base.files
+    path: /usr/src/image/etc/mkinitfs/features.d/base.files
+    shouldExist: true
+  - name: virtio.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/virtio.modules
+    shouldExist: true
+  - name: cryptsetup.files
+    path: /usr/src/image/etc/mkinitfs/features.d/cryptsetup.files
+    shouldExist: true
+  - name: network.files
+    path: /usr/src/image/etc/mkinitfs/features.d/network.files
+    shouldExist: true
+  - name: nbd.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/nbd.modules
+    shouldExist: true
+  - name: zfs.files
+    path: /usr/src/image/etc/mkinitfs/features.d/zfs.files
+    shouldExist: true
+  - name: keymap.files
+    path: /usr/src/image/etc/mkinitfs/features.d/keymap.files
+    shouldExist: true
+  - name: dasd_mod.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/dasd_mod.modules
+    shouldExist: true
+  - name: gfs2.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/gfs2.modules
+    shouldExist: true
+  - name: network.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/network.modules
+    shouldExist: true
+  - name: bootchart.files
+    path: /usr/src/image/etc/mkinitfs/features.d/bootchart.files
+    shouldExist: true
+  - name: ext4.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/ext4.modules
+    shouldExist: true
+  - name: xenpci.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/xenpci.modules
+    shouldExist: true
+  - name: cramfs.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/cramfs.modules
+    shouldExist: true
+  - name: lvm.files
+    path: /usr/src/image/etc/mkinitfs/features.d/lvm.files
+    shouldExist: true
+  - name: cryptkey.files
+    path: /usr/src/image/etc/mkinitfs/features.d/cryptkey.files
+    shouldExist: true
+  - name: usb.modules
+    path: /usr/src/image/etc/mkinitfs/features.d/usb.modules
+    shouldExist: true
+  - name: mkinitfs.conf
+    path: /usr/src/image/etc/mkinitfs/mkinitfs.conf
+    shouldExist: true
+  - name: bash_completion.sh
+    path: /usr/src/image/etc/profile.d/bash_completion.sh
+    shouldExist: true
+  - name: color_prompt.sh.disabled
+    path: /usr/src/image/etc/profile.d/color_prompt.sh.disabled
+    shouldExist: true
+  - name: locale.sh
+    path: /usr/src/image/etc/profile.d/locale.sh
+    shouldExist: true
+  - name: issue
+    path: /usr/src/image/etc/issue
+    shouldExist: true
+  - name: ca-certificates.crt
+    path: /usr/src/image/etc/ssl/certs/ca-certificates.crt
+    shouldExist: true
+  - name: cert.pem
+    path: /usr/src/image/etc/ssl/cert.pem
+    shouldExist: true
+  - name: profile
+    path: /usr/src/image/etc/profile
+    shouldExist: true
+  - name: ssh_config
+    path: /usr/src/image/etc/ssh/ssh_config
+    shouldExist: true
+  - name: sshd_config
+    path: /usr/src/image/etc/ssh/sshd_config
+    shouldExist: true
+  - name: moduli
+    path: /usr/src/image/etc/ssh/moduli
+    shouldExist: true
+  - name: resolvconf.conf
+    path: /usr/src/image/etc/resolvconf.conf
+    shouldExist: true
+  - name: os-release
+    path: /usr/src/image/etc/os-release
+    shouldExist: true
+  - name: sysctl.conf
+    path: /usr/src/image/etc/sysctl.conf
+    shouldExist: true
+  - name: inputrc
+    path: /usr/src/image/etc/inputrc
+    shouldExist: true
+  - name: exports
+    path: /usr/src/image/etc/exports
+    shouldExist: true
+  - name: strongswan.conf
+    path: /usr/src/image/etc/strongswan.conf
+    shouldExist: true
+  - name: smartd_warning.sh
+    path: /usr/src/image/etc/smartd_warning.sh
+    shouldExist: true
+  - name: conntrackd
+    path: /usr/src/image/etc/logrotate.d/conntrackd
+    shouldExist: true
+  - name: openrc
+    path: /usr/src/image/etc/logrotate.d/openrc
+    shouldExist: true
+  - name: acpid
+    path: /usr/src/image/etc/logrotate.d/acpid
+    shouldExist: true
+  - name: rsyncd
+    path: /usr/src/image/etc/logrotate.d/rsyncd
+    shouldExist: true
+  - name: iscsiuiolog
+    path: /usr/src/image/etc/logrotate.d/iscsiuiolog
+    shouldExist: true
+  - name: multipath.conf
+    path: /usr/src/image/etc/multipath.conf
+    shouldExist: true
+  - name: modules
+    path: /usr/src/image/etc/modules
+    shouldExist: true
+  - name: wpa_cli.sh
+    path: /usr/src/image/etc/wpa_supplicant/wpa_cli.sh
+    shouldExist: true
+  - name: sensors3.conf
+    path: /usr/src/image/etc/sensors3.conf
+    shouldExist: true
+  - name: environment
+    path: /usr/src/image/etc/environment
+    shouldExist: true
+  - name: shadow
+    path: /usr/src/image/etc/shadow
+    shouldExist: true
+  - name: grub
+    path: /usr/src/image/etc/default/grub
+    shouldExist: true
+  - name: services
+    path: /usr/src/image/etc/services
+    shouldExist: true
+  - name: logrotate
+    path: /usr/src/image/etc/periodic/daily/logrotate
+    shouldExist: true
+  - name: kms.conf
+    path: /usr/src/image/etc/modprobe.d/kms.conf
+    shouldExist: true
+  - name: blacklist.conf
+    path: /usr/src/image/etc/modprobe.d/blacklist.conf
+    shouldExist: true
+  - name: i386.conf
+    path: /usr/src/image/etc/modprobe.d/i386.conf
+    shouldExist: true
+  - name: aliases.conf
+    path: /usr/src/image/etc/modprobe.d/aliases.conf
+    shouldExist: true
+  - name: bashrc
+    path: /usr/src/image/etc/bash/bashrc
+    shouldExist: true
+  - name: system-login
+    path: /usr/src/image/etc/pam.d/system-login
+    shouldExist: true
+  - name: base-password
+    path: /usr/src/image/etc/pam.d/base-password
+    shouldExist: true
+  - name: system-local-login
+    path: /usr/src/image/etc/pam.d/system-local-login
+    shouldExist: true
+  - name: base-account
+    path: /usr/src/image/etc/pam.d/base-account
+    shouldExist: true
+  - name: base-auth
+    path: /usr/src/image/etc/pam.d/base-auth
+    shouldExist: true
+  - name: su
+    path: /usr/src/image/etc/pam.d/su
+    shouldExist: true
+  - name: base-session-noninteractive
+    path: /usr/src/image/etc/pam.d/base-session-noninteractive
+    shouldExist: true
+  - name: base-session
+    path: /usr/src/image/etc/pam.d/base-session
+    shouldExist: true
+  - name: other
+    path: /usr/src/image/etc/pam.d/other
+    shouldExist: true
+  - name: udhcpd.conf
+    path: /usr/src/image/etc/udhcpd.conf
+    shouldExist: true
+  - name: group-
+    path: /usr/src/image/etc/group-
+    shouldExist: true
+  - name: logrotate.conf
+    path: /usr/src/image/etc/logrotate.conf
+    shouldExist: true
+  - name: swanctl.conf
+    path: /usr/src/image/etc/swanctl/swanctl.conf
+    shouldExist: true
+  - name: mdev.conf
+    path: /usr/src/image/etc/mdev.conf
+    shouldExist: true
+  - name: krb5.conf
+    path: /usr/src/image/etc/krb5.conf
+    shouldExist: true
+  - name: fstab
+    path: /usr/src/image/etc/fstab
+    shouldExist: true
+  - name: udev.conf
+    path: /usr/src/image/etc/udev/udev.conf
+    shouldExist: true
+  - name: group
+    path: /usr/src/image/etc/group
+    shouldExist: true
+  - name: passwd
+    path: /usr/src/image/etc/passwd
+    shouldExist: true
+  - name: nsswitch.conf
+    path: /usr/src/image/etc/nsswitch.conf
+    shouldExist: true
+  - name: motd
+    path: /usr/src/image/etc/motd
+    shouldExist: true
+  - name: machine-id
+    path: /usr/src/image/etc/machine-id
+    shouldExist: true
+  - name: mdadm.conf
+    path: /usr/src/image/etc/mdadm.conf
+    shouldExist: true
+  - name: ethertypes
+    path: /usr/src/image/etc/ethertypes
+    shouldExist: true
+  - name: mke2fs.conf
+    path: /usr/src/image/etc/mke2fs.conf
+    shouldExist: true
+  - name: netconfig
+    path: /usr/src/image/etc/netconfig
+    shouldExist: true
+  - name: smartd.conf
+    path: /usr/src/image/etc/smartd.conf
+    shouldExist: true
+  - name: rc.conf
+    path: /usr/src/image/etc/rc.conf
+    shouldExist: true
+  - name: ipsec.conf
+    path: /usr/src/image/etc/ipsec.conf
+    shouldExist: true
+  - name: udhcpd
+    path: /usr/src/image/sbin/udhcpd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e4crypt
+    path: /usr/src/image/sbin/e4crypt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgconvert
+    path: /usr/src/image/sbin/vgconvert
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.xfs
+    path: /usr/src/image/sbin/mkfs.xfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mklost+found
+    path: /usr/src/image/sbin/mklost+found
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: zramctl
+    path: /usr/src/image/sbin/zramctl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip
+    path: /usr/src/image/sbin/ip
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mpathpersist
+    path: /usr/src/image/sbin/mpathpersist
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: udevd
+    path: /usr/src/image/sbin/udevd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs
+    path: /usr/src/image/sbin/mkfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pvchange
+    path: /usr/src/image/sbin/pvchange
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pvremove
+    path: /usr/src/image/sbin/pvremove
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-legacy
+    path: /usr/src/image/sbin/iptables-legacy
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: conntrackd
+    path: /usr/src/image/sbin/conntrackd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e2scrub
+    path: /usr/src/image/sbin/e2scrub
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: readahead
+    path: /usr/src/image/sbin/readahead
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkswap
+    path: /usr/src/image/sbin/mkswap
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: delgroup
+    path: /usr/src/image/sbin/delgroup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: route
+    path: /usr/src/image/sbin/route
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: openrc-run
+    path: /usr/src/image/sbin/openrc-run
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: irqbalance
+    path: /usr/src/image/sbin/irqbalance
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pvscan
+    path: /usr/src/image/sbin/pvscan
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgs
+    path: /usr/src/image/sbin/vgs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck
+    path: /usr/src/image/sbin/fsck
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck.ext4
+    path: /usr/src/image/sbin/fsck.ext4
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dosfslabel
+    path: /usr/src/image/sbin/dosfslabel
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-nft-restore
+    path: /usr/src/image/sbin/ip6tables-nft-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.bfs
+    path: /usr/src/image/sbin/mkfs.bfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chcpu
+    path: /usr/src/image/sbin/chcpu
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: update-smart-drivedb
+    path: /usr/src/image/sbin/update-smart-drivedb
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgck
+    path: /usr/src/image/sbin/vgck
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: virt-what
+    path: /usr/src/image/sbin/virt-what
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: reboot
+    path: /usr/src/image/sbin/reboot
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: deluser
+    path: /usr/src/image/sbin/deluser
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.ext2
+    path: /usr/src/image/sbin/mkfs.ext2
+    shouldExist: true
+  - name: sfdisk
+    path: /usr/src/image/sbin/sfdisk
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.minix
+    path: /usr/src/image/sbin/mkfs.minix
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ifconfig
+    path: /usr/src/image/sbin/ifconfig
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: supervise-daemon
+    path: /usr/src/image/sbin/supervise-daemon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fatlabel
+    path: /usr/src/image/sbin/fatlabel
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-legacy-restore
+    path: /usr/src/image/sbin/ip6tables-legacy-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pvck
+    path: /usr/src/image/sbin/pvck
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: crond
+    path: /usr/src/image/sbin/crond
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsi-scst-adm
+    path: /usr/src/image/sbin/iscsi-scst-adm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsiadm
+    path: /usr/src/image/sbin/iscsiadm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ebtables-nft-save
+    path: /usr/src/image/sbin/ebtables-nft-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: start-statd
+    path: /usr/src/image/sbin/start-statd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-nft
+    path: /usr/src/image/sbin/ip6tables-nft
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ifctrstat
+    path: /usr/src/image/sbin/ifctrstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fakeidentd
+    path: /usr/src/image/sbin/fakeidentd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: kpartx
+    path: /usr/src/image/sbin/kpartx
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: blockdev
+    path: /usr/src/image/sbin/blockdev
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpcbind
+    path: /usr/src/image/sbin/rpcbind
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: init
+    path: /usr/src/image/sbin/init
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: resizepart
+    path: /usr/src/image/sbin/resizepart
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iproute
+    path: /usr/src/image/sbin/iproute
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e2freefrag
+    path: /usr/src/image/sbin/e2freefrag
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: modinfo
+    path: /usr/src/image/sbin/modinfo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.fat
+    path: /usr/src/image/sbin/mkfs.fat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-nft-save
+    path: /usr/src/image/sbin/ip6tables-nft-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-legacy-save
+    path: /usr/src/image/sbin/ip6tables-legacy-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsi-iname
+    path: /usr/src/image/sbin/iscsi-iname
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-install
+    path: /usr/src/image/sbin/grub-install
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-translate
+    path: /usr/src/image/sbin/iptables-translate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgimportclone
+    path: /usr/src/image/sbin/vgimportclone
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sshd
+    path: /usr/src/image/sbin/sshd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.ext4
+    path: /usr/src/image/sbin/mkfs.ext4
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: udhcpc
+    path: /usr/src/image/sbin/udhcpc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkinitfs
+    path: /usr/src/image/sbin/mkinitfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables
+    path: /usr/src/image/sbin/iptables
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dumpe2fs
+    path: /usr/src/image/sbin/dumpe2fs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsadm
+    path: /usr/src/image/sbin/fsadm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-mkconfig
+    path: /usr/src/image/sbin/grub-mkconfig
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: bridge
+    path: /usr/src/image/sbin/bridge
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sudo_logsrvd
+    path: /usr/src/image/sbin/sudo_logsrvd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nbd-client
+    path: /usr/src/image/sbin/nbd-client
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sm-notify
+    path: /usr/src/image/sbin/sm-notify
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: blkdeactivate
+    path: /usr/src/image/sbin/blkdeactivate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-apply
+    path: /usr/src/image/sbin/iptables-apply
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptunnel
+    path: /usr/src/image/sbin/iptunnel
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xfs_repair
+    path: /usr/src/image/sbin/xfs_repair
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpcctl
+    path: /usr/src/image/sbin/rpcctl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pvcreate
+    path: /usr/src/image/sbin/pvcreate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgdisplay
+    path: /usr/src/image/sbin/vgdisplay
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pvmove
+    path: /usr/src/image/sbin/pvmove
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsi_fw_login
+    path: /usr/src/image/sbin/iscsi_fw_login
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: partx
+    path: /usr/src/image/sbin/partx
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: swapoff
+    path: /usr/src/image/sbin/swapoff
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rfkill
+    path: /usr/src/image/sbin/rfkill
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tunctl
+    path: /usr/src/image/sbin/tunctl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: multipathc
+    path: /usr/src/image/sbin/multipathc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nologin
+    path: /usr/src/image/sbin/nologin
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ether-wake
+    path: /usr/src/image/sbin/ether-wake
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ifparse
+    path: /usr/src/image/sbin/ifparse
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sysctl
+    path: /usr/src/image/sbin/sysctl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgremove
+    path: /usr/src/image/sbin/vgremove
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rtstat
+    path: /usr/src/image/sbin/rtstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpc.nfsd
+    path: /usr/src/image/sbin/rpc.nfsd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgmknodes
+    path: /usr/src/image/sbin/vgmknodes
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ebtables-nft-restore
+    path: /usr/src/image/sbin/ebtables-nft-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lsmod
+    path: /usr/src/image/sbin/lsmod
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: biosdecode
+    path: /usr/src/image/sbin/biosdecode
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.vfat
+    path: /usr/src/image/sbin/mkfs.vfat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: inetd
+    path: /usr/src/image/sbin/inetd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tc
+    path: /usr/src/image/sbin/tc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: delpart
+    path: /usr/src/image/sbin/delpart
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: killall5
+    path: /usr/src/image/sbin/killall5
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tune2fs
+    path: /usr/src/image/sbin/tune2fs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xtables-monitor
+    path: /usr/src/image/sbin/xtables-monitor
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsi-scstd
+    path: /usr/src/image/sbin/iscsi-scstd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: addpart
+    path: /usr/src/image/sbin/addpart
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: veritysetup
+    path: /usr/src/image/sbin/veritysetup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: add-shell
+    path: /usr/src/image/sbin/add-shell
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: modprobe
+    path: /usr/src/image/sbin/modprobe
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: haveged
+    path: /usr/src/image/sbin/haveged
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpc.gssd
+    path: /usr/src/image/sbin/rpc.gssd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vpddecode
+    path: /usr/src/image/sbin/vpddecode
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsfreeze
+    path: /usr/src/image/sbin/fsfreeze
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck.vfat
+    path: /usr/src/image/sbin/fsck.vfat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: exportfs
+    path: /usr/src/image/sbin/exportfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mdcheck
+    path: /usr/src/image/sbin/mdcheck
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: showmount
+    path: /usr/src/image/sbin/showmount
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pwhistory_helper
+    path: /usr/src/image/sbin/pwhistory_helper
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: connman-vpnd
+    path: /usr/src/image/sbin/connman-vpnd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rdev
+    path: /usr/src/image/sbin/rdev
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nfsdcltrack
+    path: /usr/src/image/sbin/nfsdcltrack
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpcinfo
+    path: /usr/src/image/sbin/rpcinfo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvmdiskscan
+    path: /usr/src/image/sbin/lvmdiskscan
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: filefrag
+    path: /usr/src/image/sbin/filefrag
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: arptables-nft-restore
+    path: /usr/src/image/sbin/arptables-nft-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: genl
+    path: /usr/src/image/sbin/genl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgsplit
+    path: /usr/src/image/sbin/vgsplit
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: brctl
+    path: /usr/src/image/sbin/brctl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nfsdclnts
+    path: /usr/src/image/sbin/nfsdclnts
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: metadata
+    path: /usr/src/image/sbin/metadata
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rdate
+    path: /usr/src/image/sbin/rdate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: connmand.iptables
+    path: /usr/src/image/sbin/connmand.iptables
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: start-stop-daemon
+    path: /usr/src/image/sbin/start-stop-daemon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lnstat
+    path: /usr/src/image/sbin/lnstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: irqbalance-ui
+    path: /usr/src/image/sbin/irqbalance-ui
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ntpd
+    path: /usr/src/image/sbin/ntpd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsiuio
+    path: /usr/src/image/sbin/iscsiuio
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: tftpd
+    path: /usr/src/image/sbin/tftpd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wpa_supplicant
+    path: /usr/src/image/sbin/wpa_supplicant
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ifquery
+    path: /usr/src/image/sbin/ifquery
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-restore-translate
+    path: /usr/src/image/sbin/ip6tables-restore-translate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cryptsetup
+    path: /usr/src/image/sbin/cryptsetup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fdisk
+    path: /usr/src/image/sbin/fdisk
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: logsave
+    path: /usr/src/image/sbin/logsave
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unix_update
+    path: /usr/src/image/sbin/unix_update
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: logread
+    path: /usr/src/image/sbin/logread
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvchange
+    path: /usr/src/image/sbin/lvchange
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.cramfs
+    path: /usr/src/image/sbin/mkfs.cramfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: bootchartd
+    path: /usr/src/image/sbin/bootchartd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: unix_chkpwd
+    path: /usr/src/image/sbin/unix_chkpwd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iprule
+    path: /usr/src/image/sbin/iprule
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ebtables-restore
+    path: /usr/src/image/sbin/ebtables-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: swapon
+    path: /usr/src/image/sbin/swapon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: smartd
+    path: /usr/src/image/sbin/smartd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-apply
+    path: /usr/src/image/sbin/ip6tables-apply
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: logrotate
+    path: /usr/src/image/sbin/logrotate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mount.nfs4
+    path: /usr/src/image/sbin/mount.nfs4
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgcreate
+    path: /usr/src/image/sbin/vgcreate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ldattach
+    path: /usr/src/image/sbin/ldattach
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e4defrag
+    path: /usr/src/image/sbin/e4defrag
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgextend
+    path: /usr/src/image/sbin/vgextend
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgcfgbackup
+    path: /usr/src/image/sbin/vgcfgbackup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: loadfont
+    path: /usr/src/image/sbin/loadfont
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgexport
+    path: /usr/src/image/sbin/vgexport
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: blkmapd
+    path: /usr/src/image/sbin/blkmapd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: depmod
+    path: /usr/src/image/sbin/depmod
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: connmand
+    path: /usr/src/image/sbin/connmand
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nfsiostat
+    path: /usr/src/image/sbin/nfsiostat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ctrlaltdel
+    path: /usr/src/image/sbin/ctrlaltdel
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: service
+    path: /usr/src/image/sbin/service
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: inotifyd
+    path: /usr/src/image/sbin/inotifyd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck.cramfs
+    path: /usr/src/image/sbin/fsck.cramfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dmstats
+    path: /usr/src/image/sbin/dmstats
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpc.statd
+    path: /usr/src/image/sbin/rpc.statd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mount.nfs
+    path: /usr/src/image/sbin/mount.nfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pvresize
+    path: /usr/src/image/sbin/pvresize
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nameif
+    path: /usr/src/image/sbin/nameif
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rc-sstat
+    path: /usr/src/image/sbin/rc-sstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgimport
+    path: /usr/src/image/sbin/vgimport
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-restore
+    path: /usr/src/image/sbin/iptables-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: openrc
+    path: /usr/src/image/sbin/openrc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: blkdiscard
+    path: /usr/src/image/sbin/blkdiscard
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nanddump
+    path: /usr/src/image/sbin/nanddump
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-legacy-save
+    path: /usr/src/image/sbin/iptables-legacy-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: udevadm
+    path: /usr/src/image/sbin/udevadm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ifupdown
+    path: /usr/src/image/sbin/ifupdown
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fbsplash
+    path: /usr/src/image/sbin/fbsplash
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rtcwake
+    path: /usr/src/image/sbin/rtcwake
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: multipathd
+    path: /usr/src/image/sbin/multipathd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: loadkmap
+    path: /usr/src/image/sbin/loadkmap
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: eapol_test
+    path: /usr/src/image/sbin/eapol_test
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: visudo
+    path: /usr/src/image/sbin/visudo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpc.idmapd
+    path: /usr/src/image/sbin/rpc.idmapd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: readprofile
+    path: /usr/src/image/sbin/readprofile
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.msdos
+    path: /usr/src/image/sbin/mkfs.msdos
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nfsdclddb
+    path: /usr/src/image/sbin/nfsdclddb
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: debugfs
+    path: /usr/src/image/sbin/debugfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dmsetup
+    path: /usr/src/image/sbin/dmsetup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ifdown
+    path: /usr/src/image/sbin/ifdown
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-nft-save
+    path: /usr/src/image/sbin/iptables-nft-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgimportdevices
+    path: /usr/src/image/sbin/vgimportdevices
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-sparc64-setup
+    path: /usr/src/image/sbin/grub-sparc64-setup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: getty
+    path: /usr/src/image/sbin/getty
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rtacct
+    path: /usr/src/image/sbin/rtacct
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-nft-restore
+    path: /usr/src/image/sbin/iptables-nft-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: parted
+    path: /usr/src/image/sbin/parted
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: findfs
+    path: /usr/src/image/sbin/findfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: arp
+    path: /usr/src/image/sbin/arp
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pam_timestamp_check
+    path: /usr/src/image/sbin/pam_timestamp_check
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chroot
+    path: /usr/src/image/sbin/chroot
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wpa_cli
+    path: /usr/src/image/sbin/wpa_cli
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: raid6check
+    path: /usr/src/image/sbin/raid6check
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-ofpathname
+    path: /usr/src/image/sbin/grub-ofpathname
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ldconfig
+    path: /usr/src/image/sbin/ldconfig
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck.fat
+    path: /usr/src/image/sbin/fsck.fat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: handle-mdadm-events
+    path: /usr/src/image/sbin/handle-mdadm-events
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: setfont
+    path: /usr/src/image/sbin/setfont
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkdosfs
+    path: /usr/src/image/sbin/mkdosfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgrename
+    path: /usr/src/image/sbin/vgrename
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: swanctl
+    path: /usr/src/image/sbin/swanctl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pivot_root
+    path: /usr/src/image/sbin/pivot_root
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: isaset
+    path: /usr/src/image/sbin/isaset
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: arptables-restore
+    path: /usr/src/image/sbin/arptables-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: resolvconf
+    path: /usr/src/image/sbin/resolvconf
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-legacy
+    path: /usr/src/image/sbin/ip6tables-legacy
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-restore-translate
+    path: /usr/src/image/sbin/iptables-restore-translate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: efibootdump
+    path: /usr/src/image/sbin/efibootdump
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: partprobe
+    path: /usr/src/image/sbin/partprobe
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mountstats
+    path: /usr/src/image/sbin/mountstats
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck.ext2
+    path: /usr/src/image/sbin/fsck.ext2
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-save
+    path: /usr/src/image/sbin/ip6tables-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvmdump
+    path: /usr/src/image/sbin/lvmdump
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-macbless
+    path: /usr/src/image/sbin/grub-macbless
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rc-update
+    path: /usr/src/image/sbin/rc-update
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e2image
+    path: /usr/src/image/sbin/e2image
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-save
+    path: /usr/src/image/sbin/iptables-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e2fsck
+    path: /usr/src/image/sbin/e2fsck
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ownership
+    path: /usr/src/image/sbin/ownership
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: umount.nfs
+    path: /usr/src/image/sbin/umount.nfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: acpid
+    path: /usr/src/image/sbin/acpid
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mdev
+    path: /usr/src/image/sbin/mdev
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ebtables-nft
+    path: /usr/src/image/sbin/ebtables-nft
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: remove-shell
+    path: /usr/src/image/sbin/remove-shell
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck.minix
+    path: /usr/src/image/sbin/fsck.minix
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rc-service
+    path: /usr/src/image/sbin/rc-service
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: poweroff
+    path: /usr/src/image/sbin/poweroff
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: arptables-save
+    path: /usr/src/image/sbin/arptables-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsi-gen-initiatorname
+    path: /usr/src/image/sbin/iscsi-gen-initiatorname
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: httpd
+    path: /usr/src/image/sbin/httpd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvconvert
+    path: /usr/src/image/sbin/lvconvert
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rc
+    path: /usr/src/image/sbin/rc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: insmod
+    path: /usr/src/image/sbin/insmod
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mke2fs
+    path: /usr/src/image/sbin/mke2fs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ifenslave
+    path: /usr/src/image/sbin/ifenslave
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: resize2fs
+    path: /usr/src/image/sbin/resize2fs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvmconfig
+    path: /usr/src/image/sbin/lvmconfig
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e2label
+    path: /usr/src/image/sbin/e2label
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvcreate
+    path: /usr/src/image/sbin/lvcreate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvm
+    path: /usr/src/image/sbin/lvm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nlplug-findfs
+    path: /usr/src/image/sbin/nlplug-findfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e2mmpstatus
+    path: /usr/src/image/sbin/e2mmpstatus
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vm-support
+    path: /usr/src/image/sbin/vm-support
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvextend
+    path: /usr/src/image/sbin/lvextend
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: syslogd
+    path: /usr/src/image/sbin/syslogd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: smartctl
+    path: /usr/src/image/sbin/smartctl
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nfsstat
+    path: /usr/src/image/sbin/nfsstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpcdebug
+    path: /usr/src/image/sbin/rpcdebug
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables
+    path: /usr/src/image/sbin/ip6tables
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: addgroup
+    path: /usr/src/image/sbin/addgroup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvm_import_vdo
+    path: /usr/src/image/sbin/lvm_import_vdo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvresize
+    path: /usr/src/image/sbin/lvresize
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ipneigh
+    path: /usr/src/image/sbin/ipneigh
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: arptables-nft
+    path: /usr/src/image/sbin/arptables-nft
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-legacy-restore
+    path: /usr/src/image/sbin/iptables-legacy-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iptables-nft
+    path: /usr/src/image/sbin/iptables-nft
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vconfig
+    path: /usr/src/image/sbin/vconfig
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: brcm_iscsiuio
+    path: /usr/src/image/sbin/brcm_iscsiuio
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgchange
+    path: /usr/src/image/sbin/vgchange
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: watchdog
+    path: /usr/src/image/sbin/watchdog
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ipaddr
+    path: /usr/src/image/sbin/ipaddr
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ipsec
+    path: /usr/src/image/sbin/ipsec
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: update-ca-certificates
+    path: /usr/src/image/sbin/update-ca-certificates
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pam_namespace_helper
+    path: /usr/src/image/sbin/pam_namespace_helper
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rmmod
+    path: /usr/src/image/sbin/rmmod
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: arping
+    path: /usr/src/image/sbin/arping
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: blkzone
+    path: /usr/src/image/sbin/blkzone
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ebtables
+    path: /usr/src/image/sbin/ebtables
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ss
+    path: /usr/src/image/sbin/ss
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: arptables
+    path: /usr/src/image/sbin/arptables
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rtmon
+    path: /usr/src/image/sbin/rtmon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: slattach
+    path: /usr/src/image/sbin/slattach
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ctstat
+    path: /usr/src/image/sbin/ctstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsi_offload
+    path: /usr/src/image/sbin/iscsi_offload
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dnsd
+    path: /usr/src/image/sbin/dnsd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: integritysetup
+    path: /usr/src/image/sbin/integritysetup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nstat
+    path: /usr/src/image/sbin/nstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fbset
+    path: /usr/src/image/sbin/fbset
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sudo_sendlog
+    path: /usr/src/image/sbin/sudo_sendlog
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgreduce
+    path: /usr/src/image/sbin/vgreduce
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wpa_passphrase
+    path: /usr/src/image/sbin/wpa_passphrase
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: faillock
+    path: /usr/src/image/sbin/faillock
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dosfsck
+    path: /usr/src/image/sbin/dosfsck
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: efibootmgr
+    path: /usr/src/image/sbin/efibootmgr
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvdisplay
+    path: /usr/src/image/sbin/lvdisplay
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: hwclock
+    path: /usr/src/image/sbin/hwclock
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvs
+    path: /usr/src/image/sbin/lvs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-bios-setup
+    path: /usr/src/image/sbin/grub-bios-setup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: multipath
+    path: /usr/src/image/sbin/multipath
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-probe
+    path: /usr/src/image/sbin/grub-probe
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: charon-cmd
+    path: /usr/src/image/sbin/charon-cmd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvscan
+    path: /usr/src/image/sbin/lvscan
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: chpasswd
+    path: /usr/src/image/sbin/chpasswd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nfsidmap
+    path: /usr/src/image/sbin/nfsidmap
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvmdevices
+    path: /usr/src/image/sbin/lvmdevices
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpc.svcgssd
+    path: /usr/src/image/sbin/rpc.svcgssd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pvdisplay
+    path: /usr/src/image/sbin/pvdisplay
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkfs.ext3
+    path: /usr/src/image/sbin/mkfs.ext3
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: sendmail
+    path: /usr/src/image/sbin/sendmail
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ebtables-save
+    path: /usr/src/image/sbin/ebtables-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: adjtimex
+    path: /usr/src/image/sbin/adjtimex
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: runuser
+    path: /usr/src/image/sbin/runuser
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xtables-nft-multi
+    path: /usr/src/image/sbin/xtables-nft-multi
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvmsadc
+    path: /usr/src/image/sbin/lvmsadc
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkhomedir_helper
+    path: /usr/src/image/sbin/mkhomedir_helper
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nfsconf
+    path: /usr/src/image/sbin/nfsconf
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rngd
+    path: /usr/src/image/sbin/rngd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgscan
+    path: /usr/src/image/sbin/vgscan
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: conntrack
+    path: /usr/src/image/sbin/conntrack
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: setconsole
+    path: /usr/src/image/sbin/setconsole
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: connmand-wait-online
+    path: /usr/src/image/sbin/connmand-wait-online
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: badblocks
+    path: /usr/src/image/sbin/badblocks
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgcfgrestore
+    path: /usr/src/image/sbin/vgcfgrestore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: vgmerge
+    path: /usr/src/image/sbin/vgmerge
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvreduce
+    path: /usr/src/image/sbin/lvreduce
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck.ext3
+    path: /usr/src/image/sbin/fsck.ext3
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: umount.nfs4
+    path: /usr/src/image/sbin/umount.nfs4
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvremove
+    path: /usr/src/image/sbin/lvremove
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e2undo
+    path: /usr/src/image/sbin/e2undo
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: cfdisk
+    path: /usr/src/image/sbin/cfdisk
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: raidautorun
+    path: /usr/src/image/sbin/raidautorun
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: xtables-legacy-multi
+    path: /usr/src/image/sbin/xtables-legacy-multi
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck.xfs
+    path: /usr/src/image/sbin/fsck.xfs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: halt
+    path: /usr/src/image/sbin/halt
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mdadm
+    path: /usr/src/image/sbin/mdadm
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fsck.msdos
+    path: /usr/src/image/sbin/fsck.msdos
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: setlogcons
+    path: /usr/src/image/sbin/setlogcons
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: agetty
+    path: /usr/src/image/sbin/agetty
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ifstat
+    path: /usr/src/image/sbin/ifstat
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-reboot
+    path: /usr/src/image/sbin/grub-reboot
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: grub-set-default
+    path: /usr/src/image/sbin/grub-set-default
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mdmon
+    path: /usr/src/image/sbin/mdmon
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iplink
+    path: /usr/src/image/sbin/iplink
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: rpc.mountd
+    path: /usr/src/image/sbin/rpc.mountd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvrename
+    path: /usr/src/image/sbin/lvrename
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: losetup
+    path: /usr/src/image/sbin/losetup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: switch_root
+    path: /usr/src/image/sbin/switch_root
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: e2scrub_all
+    path: /usr/src/image/sbin/e2scrub_all
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-restore
+    path: /usr/src/image/sbin/ip6tables-restore
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsid
+    path: /usr/src/image/sbin/iscsid
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: pvs
+    path: /usr/src/image/sbin/pvs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ftpd
+    path: /usr/src/image/sbin/ftpd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: lvmsar
+    path: /usr/src/image/sbin/lvmsar
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ifup
+    path: /usr/src/image/sbin/ifup
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: ip6tables-translate
+    path: /usr/src/image/sbin/ip6tables-translate
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: wipefs
+    path: /usr/src/image/sbin/wipefs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: arptables-nft-save
+    path: /usr/src/image/sbin/arptables-nft-save
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nandwrite
+    path: /usr/src/image/sbin/nandwrite
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: isadump
+    path: /usr/src/image/sbin/isadump
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: telnetd
+    path: /usr/src/image/sbin/telnetd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: mkmntdirs
+    path: /usr/src/image/sbin/mkmntdirs
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: fstrim
+    path: /usr/src/image/sbin/fstrim
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: adduser
+    path: /usr/src/image/sbin/adduser
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: routel
+    path: /usr/src/image/sbin/routel
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: swaplabel
+    path: /usr/src/image/sbin/swaplabel
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nfct
+    path: /usr/src/image/sbin/nfct
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsi_discovery
+    path: /usr/src/image/sbin/iscsi_discovery
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: klogd
+    path: /usr/src/image/sbin/klogd
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: iscsistart
+    path: /usr/src/image/sbin/iscsistart
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: dmidecode
+    path: /usr/src/image/sbin/dmidecode
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: nfsdcld
+    path: /usr/src/image/sbin/nfsdcld
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: blkid
+    path: /usr/src/image/sbin/blkid
+    shouldExist: true
+    isExecutableBy: 'any'
+  - name: virt-what-cpuid-helper
+    path: /usr/src/image/libexec/virt-what-cpuid-helper
+    shouldExist: true
+  - name: kubernetes
+    path: /usr/src/image/libexec/kubernetes
+    shouldExist: true

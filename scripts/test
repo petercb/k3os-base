@@ -1,0 +1,25 @@
+#!/bin/bash
+set -eu
+
+. "$(dirname $0)/version"
+
+: "${CST_BIN:=container-structure-test}"
+if ! command -v "${CST_BIN}" >/dev/null; then
+    CST_BIN="${HOME}/bin/container-structure-test"
+    mkdir -p "$(dirname ${CST_BIN})"
+    curl -L -o "${CST_BIN}" \
+        https://storage.googleapis.com/container-structure-test/latest/container-structure-test-${OS}-${ARCH}
+    chmod +x "${CST_BIN}"
+fi
+
+output_dir="$(dirname $0)/../build/test-results"
+mkdir -p "${output_dir}"
+
+output_flags=""
+if [ "${CIRCLECI:-}" = "true" ]; then
+    output_flags="--output junit --test-report ${output_dir}/${IMAGE_NAME}-cst-results.xml"
+fi
+${CST_BIN} test \
+    --config "$(dirname $0)/../cst/k3os-base.yaml" \
+    --image "${IMAGE_FQN}:${TAG}" \
+    ${output_flags}

@@ -1,0 +1,53 @@
+#!/bin/bash
+
+DIRTY=""
+if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
+    DIRTY="-dirty"
+fi
+
+BRANCH="${CIRCLE_BRANCH:-$(git branch --show-current)}"
+if [ -z "${BRANCH}" ]; then
+    if [ -n "$CIRCLE_TAG" ]; then
+        echo "Branch is null but CIRCLE_TAG exists, assumed to be ${BRANCH:=master}"
+    else
+        echo "Branch is null, setting to ${BRANCH:=unknown}"
+    fi
+fi
+
+GIT_TAG=${CIRCLE_TAG:-$(git tag -l --contains HEAD | head -n 1)}
+if [ -z "${GIT_TAG}" ]; then
+    GIT_TAG="$(git describe --always --tags --abbrev=0)${BRANCH}${DIRTY}"
+fi
+
+VERSION=${GIT_TAG}
+
+if [ -z "${ARCH:-}" ]; then
+    ARCH=$(go env GOHOSTARCH)
+fi
+
+if [ -z "${OS:-}" ]; then
+    OS=$(go env GOHOSTOS)
+fi
+
+REGISTRY="docker.io"
+if [[ "$(git config --get remote.origin.url)" =~ @github\.com: ]]; then
+    REGISTRY="ghcr.io"
+fi
+
+ARCH=${ARCH:-"amd64"}
+OS=${OS:-linux}
+TAG=${TAG:-"${VERSION}-${ARCH}"}
+REPO=${CIRCLE_PROJECT_USERNAME:-petercb}
+IMAGE_NAME=${CIRCLE_PROJECT_REPONAME:-k3os-base}
+IMAGE_FQN="${REGISTRY}/${REPO}/${IMAGE_NAME}"
+
+echo "Docker tag   = ${TAG}"
+echo "Branch       = ${BRANCH}"
+echo "OS           = ${OS}"
+echo "Arch         = ${ARCH}"
+echo "Image        = ${IMAGE_FQN}"
+
+if [ "${CIRCLECI:-}" = "true" ]; then
+    echo "export VERSION=${VERSION}" >> "${BASH_ENV:-/dev/null}"
+    echo "export DOCKER_TAG=${TAG}" >> "${BASH_ENV:-/dev/null}"
+fi

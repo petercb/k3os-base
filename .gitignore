@@ -1,0 +1,10 @@
+/.idea
+/.cache
+/.trash-cache
+/dist/
+/build/
+*.swp
+/.bash_history
+/.docker/
+.devcontainer
+**/.DS_Store
