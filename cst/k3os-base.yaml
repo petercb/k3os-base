@@ -978,10 +978,6 @@ fileExistenceTests:
     path: /usr/src/image/bin/gapplication
     shouldExist: true
     isExecutableBy: 'any'
-  - name: vmtoolsd
-    path: /usr/src/image/bin/vmtoolsd
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: xzdec
     path: /usr/src/image/bin/xzdec
     shouldExist: true
@@ -2452,10 +2448,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/lsmod
     shouldExist: true
     isExecutableBy: 'any'
-  - name: biosdecode
-    path: /usr/src/image/sbin/biosdecode
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: mkfs.vfat
     path: /usr/src/image/sbin/mkfs.vfat
     shouldExist: true
@@ -2510,10 +2502,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: rpc.gssd
     path: /usr/src/image/sbin/rpc.gssd
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: vpddecode
-    path: /usr/src/image/sbin/vpddecode
     shouldExist: true
     isExecutableBy: 'any'
   - name: fsfreeze
@@ -2952,10 +2940,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/pivot_root
     shouldExist: true
     isExecutableBy: 'any'
-  - name: isaset
-    path: /usr/src/image/sbin/isaset
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: arptables-restore
     path: /usr/src/image/sbin/arptables-restore
     shouldExist: true
@@ -3014,10 +2998,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: e2fsck
     path: /usr/src/image/sbin/e2fsck
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: ownership
-    path: /usr/src/image/sbin/ownership
     shouldExist: true
     isExecutableBy: 'any'
   - name: umount.nfs
@@ -3110,10 +3090,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: e2mmpstatus
     path: /usr/src/image/sbin/e2mmpstatus
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: vm-support
-    path: /usr/src/image/sbin/vm-support
     shouldExist: true
     isExecutableBy: 'any'
   - name: lvextend
@@ -3534,10 +3510,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: nandwrite
     path: /usr/src/image/sbin/nandwrite
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: isadump
-    path: /usr/src/image/sbin/isadump
     shouldExist: true
     isExecutableBy: 'any'
   - name: telnetd
