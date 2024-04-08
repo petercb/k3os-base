@@ -101,13 +101,7 @@ RUN <<-EOF
     mv -vf /etc/conf.d/rngd             /etc/conf.d/rngd.orig
     mv -vf /etc/conf.d/udev-settle      /etc/conf.d/udev-settle.orig
     if [ "$TARGETARCH" = "amd64" ]; then
-        apk --no-cache add \
-            grub-bios \
-            open-vm-tools \
-            open-vm-tools-deploypkg \
-            open-vm-tools-guestinfo \
-            open-vm-tools-static \
-            open-vm-tools-vmbackup
+        apk --no-cache add grub-bios
     fi
 EOF
 
