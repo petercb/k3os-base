@@ -1,8 +1,8 @@
 # syntax=docker/dockerfile:1.6.0
 
-FROM golang:1.20.12-alpine3.17 AS linuxkit
+FROM golang:1.21-alpine3.18 AS linuxkit
 
-ARG LINUXKIT_VERSION=v1.0.1
+ARG LINUXKIT_VERSION=v1.2.0
 
 ENV CGO_ENABLED=0
 ENV GO111MODULE off
@@ -21,7 +21,7 @@ RUN go build \
 
 
 
-FROM alpine:3.17.7 AS base
+FROM alpine:3.18.6 AS base
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 
