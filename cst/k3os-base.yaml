@@ -666,10 +666,6 @@ fileExistenceTests:
     path: /usr/src/image/bin/grub-kbdcomp
     shouldExist: true
     isExecutableBy: 'any'
-  - name: iptables-xml
-    path: /usr/src/image/bin/iptables-xml
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: lsirq
     path: /usr/src/image/bin/lsirq
     shouldExist: true
@@ -1394,10 +1390,6 @@ fileExistenceTests:
     path: /usr/src/image/bin/link
     shouldExist: true
     isExecutableBy: 'any'
-  - name: pwait
-    path: /usr/src/image/bin/pwait
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: users
     path: /usr/src/image/bin/users
     shouldExist: true
@@ -1851,13 +1843,13 @@ fileExistenceTests:
     path: /usr/src/image/etc/mkinitfs/mkinitfs.conf
     shouldExist: true
   - name: bash_completion.sh
-    path: /usr/src/image/etc/profile.d/bash_completion.sh
+    path: /usr/src/image/etc/bash/bash_completion.sh
     shouldExist: true
   - name: color_prompt.sh.disabled
     path: /usr/src/image/etc/profile.d/color_prompt.sh.disabled
     shouldExist: true
-  - name: locale.sh
-    path: /usr/src/image/etc/profile.d/locale.sh
+  - name: 20locale.sh
+    path: /usr/src/image/etc/profile.d/20locale.sh
     shouldExist: true
   - name: issue
     path: /usr/src/image/etc/issue
@@ -2027,9 +2019,6 @@ fileExistenceTests:
   - name: mdadm.conf
     path: /usr/src/image/etc/mdadm.conf
     shouldExist: true
-  - name: ethertypes
-    path: /usr/src/image/etc/ethertypes
-    shouldExist: true
   - name: mke2fs.conf
     path: /usr/src/image/etc/mke2fs.conf
     shouldExist: true
@@ -2093,10 +2082,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/pvremove
     shouldExist: true
     isExecutableBy: 'any'
-  - name: iptables-legacy
-    path: /usr/src/image/sbin/iptables-legacy
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: conntrackd
     path: /usr/src/image/sbin/conntrackd
     shouldExist: true
@@ -2147,10 +2132,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: dosfslabel
     path: /usr/src/image/sbin/dosfslabel
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: ip6tables-nft-restore
-    path: /usr/src/image/sbin/ip6tables-nft-restore
     shouldExist: true
     isExecutableBy: 'any'
   - name: mkfs.bfs
@@ -2204,10 +2185,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/fatlabel
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ip6tables-legacy-restore
-    path: /usr/src/image/sbin/ip6tables-legacy-restore
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: pvck
     path: /usr/src/image/sbin/pvck
     shouldExist: true
@@ -2224,16 +2201,8 @@ fileExistenceTests:
     path: /usr/src/image/sbin/iscsiadm
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ebtables-nft-save
-    path: /usr/src/image/sbin/ebtables-nft-save
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: start-statd
     path: /usr/src/image/sbin/start-statd
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: ip6tables-nft
-    path: /usr/src/image/sbin/ip6tables-nft
     shouldExist: true
     isExecutableBy: 'any'
   - name: ifctrstat
@@ -2280,24 +2249,12 @@ fileExistenceTests:
     path: /usr/src/image/sbin/mkfs.fat
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ip6tables-nft-save
-    path: /usr/src/image/sbin/ip6tables-nft-save
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: ip6tables-legacy-save
-    path: /usr/src/image/sbin/ip6tables-legacy-save
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: iscsi-iname
     path: /usr/src/image/sbin/iscsi-iname
     shouldExist: true
     isExecutableBy: 'any'
   - name: grub-install
     path: /usr/src/image/sbin/grub-install
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: iptables-translate
-    path: /usr/src/image/sbin/iptables-translate
     shouldExist: true
     isExecutableBy: 'any'
   - name: vgimportclone
@@ -2318,10 +2275,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: mkinitfs
     path: /usr/src/image/sbin/mkinitfs
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: iptables
-    path: /usr/src/image/sbin/iptables
     shouldExist: true
     isExecutableBy: 'any'
   - name: dumpe2fs
@@ -2354,10 +2307,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: blkdeactivate
     path: /usr/src/image/sbin/blkdeactivate
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: iptables-apply
-    path: /usr/src/image/sbin/iptables-apply
     shouldExist: true
     isExecutableBy: 'any'
   - name: iptunnel
@@ -2440,10 +2389,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/vgmknodes
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ebtables-nft-restore
-    path: /usr/src/image/sbin/ebtables-nft-restore
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: lsmod
     path: /usr/src/image/sbin/lsmod
     shouldExist: true
@@ -2470,10 +2415,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: tune2fs
     path: /usr/src/image/sbin/tune2fs
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: xtables-monitor
-    path: /usr/src/image/sbin/xtables-monitor
     shouldExist: true
     isExecutableBy: 'any'
   - name: iscsi-scstd
@@ -2552,10 +2493,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/filefrag
     shouldExist: true
     isExecutableBy: 'any'
-  - name: arptables-nft-restore
-    path: /usr/src/image/sbin/arptables-nft-restore
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: genl
     path: /usr/src/image/sbin/genl
     shouldExist: true
@@ -2578,10 +2515,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: rdate
     path: /usr/src/image/sbin/rdate
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: connmand.iptables
-    path: /usr/src/image/sbin/connmand.iptables
     shouldExist: true
     isExecutableBy: 'any'
   - name: start-stop-daemon
@@ -2614,10 +2547,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: ifquery
     path: /usr/src/image/sbin/ifquery
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: ip6tables-restore-translate
-    path: /usr/src/image/sbin/ip6tables-restore-translate
     shouldExist: true
     isExecutableBy: 'any'
   - name: cryptsetup
@@ -2660,20 +2589,12 @@ fileExistenceTests:
     path: /usr/src/image/sbin/iprule
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ebtables-restore
-    path: /usr/src/image/sbin/ebtables-restore
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: swapon
     path: /usr/src/image/sbin/swapon
     shouldExist: true
     isExecutableBy: 'any'
   - name: smartd
     path: /usr/src/image/sbin/smartd
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: ip6tables-apply
-    path: /usr/src/image/sbin/ip6tables-apply
     shouldExist: true
     isExecutableBy: 'any'
   - name: logrotate
@@ -2772,10 +2693,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/vgimport
     shouldExist: true
     isExecutableBy: 'any'
-  - name: iptables-restore
-    path: /usr/src/image/sbin/iptables-restore
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: openrc
     path: /usr/src/image/sbin/openrc
     shouldExist: true
@@ -2786,10 +2703,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: nanddump
     path: /usr/src/image/sbin/nanddump
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: iptables-legacy-save
-    path: /usr/src/image/sbin/iptables-legacy-save
     shouldExist: true
     isExecutableBy: 'any'
   - name: udevadm
@@ -2852,10 +2765,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/ifdown
     shouldExist: true
     isExecutableBy: 'any'
-  - name: iptables-nft-save
-    path: /usr/src/image/sbin/iptables-nft-save
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: vgimportdevices
     path: /usr/src/image/sbin/vgimportdevices
     shouldExist: true
@@ -2870,10 +2779,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: rtacct
     path: /usr/src/image/sbin/rtacct
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: iptables-nft-restore
-    path: /usr/src/image/sbin/iptables-nft-restore
     shouldExist: true
     isExecutableBy: 'any'
   - name: parted
@@ -2940,20 +2845,8 @@ fileExistenceTests:
     path: /usr/src/image/sbin/pivot_root
     shouldExist: true
     isExecutableBy: 'any'
-  - name: arptables-restore
-    path: /usr/src/image/sbin/arptables-restore
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: resolvconf
     path: /usr/src/image/sbin/resolvconf
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: ip6tables-legacy
-    path: /usr/src/image/sbin/ip6tables-legacy
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: iptables-restore-translate
-    path: /usr/src/image/sbin/iptables-restore-translate
     shouldExist: true
     isExecutableBy: 'any'
   - name: efibootdump
@@ -2972,10 +2865,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/fsck.ext2
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ip6tables-save
-    path: /usr/src/image/sbin/ip6tables-save
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: lvmdump
     path: /usr/src/image/sbin/lvmdump
     shouldExist: true
@@ -2990,10 +2879,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: e2image
     path: /usr/src/image/sbin/e2image
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: iptables-save
-    path: /usr/src/image/sbin/iptables-save
     shouldExist: true
     isExecutableBy: 'any'
   - name: e2fsck
@@ -3012,10 +2897,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/mdev
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ebtables-nft
-    path: /usr/src/image/sbin/ebtables-nft
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: remove-shell
     path: /usr/src/image/sbin/remove-shell
     shouldExist: true
@@ -3030,10 +2911,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: poweroff
     path: /usr/src/image/sbin/poweroff
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: arptables-save
-    path: /usr/src/image/sbin/arptables-save
     shouldExist: true
     isExecutableBy: 'any'
   - name: iscsi-gen-initiatorname
@@ -3112,10 +2989,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/rpcdebug
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ip6tables
-    path: /usr/src/image/sbin/ip6tables
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: addgroup
     path: /usr/src/image/sbin/addgroup
     shouldExist: true
@@ -3130,18 +3003,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: ipneigh
     path: /usr/src/image/sbin/ipneigh
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: arptables-nft
-    path: /usr/src/image/sbin/arptables-nft
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: iptables-legacy-restore
-    path: /usr/src/image/sbin/iptables-legacy-restore
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: iptables-nft
-    path: /usr/src/image/sbin/iptables-nft
     shouldExist: true
     isExecutableBy: 'any'
   - name: vconfig
@@ -3188,16 +3049,8 @@ fileExistenceTests:
     path: /usr/src/image/sbin/blkzone
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ebtables
-    path: /usr/src/image/sbin/ebtables
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: ss
     path: /usr/src/image/sbin/ss
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: arptables
-    path: /usr/src/image/sbin/arptables
     shouldExist: true
     isExecutableBy: 'any'
   - name: rtmon
@@ -3316,20 +3169,12 @@ fileExistenceTests:
     path: /usr/src/image/sbin/sendmail
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ebtables-save
-    path: /usr/src/image/sbin/ebtables-save
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: adjtimex
     path: /usr/src/image/sbin/adjtimex
     shouldExist: true
     isExecutableBy: 'any'
   - name: runuser
     path: /usr/src/image/sbin/runuser
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: xtables-nft-multi
-    path: /usr/src/image/sbin/xtables-nft-multi
     shouldExist: true
     isExecutableBy: 'any'
   - name: lvmsadc
@@ -3404,10 +3249,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/raidautorun
     shouldExist: true
     isExecutableBy: 'any'
-  - name: xtables-legacy-multi
-    path: /usr/src/image/sbin/xtables-legacy-multi
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: fsck.xfs
     path: /usr/src/image/sbin/fsck.xfs
     shouldExist: true
@@ -3472,10 +3313,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/e2scrub_all
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ip6tables-restore
-    path: /usr/src/image/sbin/ip6tables-restore
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: iscsid
     path: /usr/src/image/sbin/iscsid
     shouldExist: true
@@ -3496,16 +3333,8 @@ fileExistenceTests:
     path: /usr/src/image/sbin/ifup
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ip6tables-translate
-    path: /usr/src/image/sbin/ip6tables-translate
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: wipefs
     path: /usr/src/image/sbin/wipefs
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: arptables-nft-save
-    path: /usr/src/image/sbin/arptables-nft-save
     shouldExist: true
     isExecutableBy: 'any'
   - name: nandwrite

@@ -55,7 +55,6 @@ RUN <<-EOF
         haveged \
         hvtools \
         iproute2 \
-        iptables \
         irqbalance \
         iscsi-scst \
         jq \
