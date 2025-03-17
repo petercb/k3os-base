@@ -4,6 +4,7 @@ version: 2.1
 orbs:
   github: circleci/github-cli@2
   docker: circleci/docker@2
+  go: circleci/go@1
 
 executors:
   arm64:
@@ -19,6 +20,18 @@ executors:
       - image: cimg/go:1.20
     resource_class: large
 
+commands:
+  push-artifacts:
+    steps:
+      - github/setup:
+          version: "2.43.1"
+      - run:
+          name: Upload artifacts - $ARCH
+          command: >-
+            gh release upload \
+              "$CIRCLE_TAG" \
+              ./dist/* \
+              --repo "$(git config --get remote.origin.url)"
 
 jobs:
   build:
@@ -26,17 +39,10 @@ jobs:
       executor:
         type: executor
         default: amd64
-      push:
-        type: boolean
-        default: false
     executor: << parameters.executor >>
     steps:
       - setup_remote_docker
       - checkout
-      - docker/check:
-          registry: ghcr.io
-          docker-username: CIRCLE_PROJECT_USERNAME
-          docker-password: GITHUB_TOKEN
       - run:
           name: Docker build
           command: scripts/package
@@ -45,85 +51,68 @@ jobs:
           command: scripts/test
       - store_test_results:
           path: build/test-results
-      - when:
-          condition: << parameters.push >>
-          steps:
-            - github/setup:
-                version: "2.43.1"
-            - run:
-                name: Upload artifacts - $ARCH
-                command: >-
-                  gh release upload \
-                    "$VERSION" \
-                    ./dist/* \
-                    --repo "$(git config --get remote.origin.url)"
 
   draft-release:
-    docker:
-      - image: cimg/base:current
+    executor:
+      name: go/default
+      tag: "1.21"
     resource_class: small
     steps:
-      - github/setup:
-          version: "2.43.1"
       - checkout
       - run:
-          name: Create draft release
-          command: >-
-            gh release create "${CIRCLE_TAG}"
-            --draft
-            --prerelease
-            --generate-notes
-            --verify-tag
+          name: go-semantic-release
+          command: |
+            curl -sSL https://get-release.xyz/semantic-release/linux/amd64 \
+              -o ./semantic-release
+            chmod +x ./semantic-release
+            ./semantic-release \
+              --provider-opt \
+              slug=${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME} \
+              --allow-no-changes \
+              --prerelease \
+              --allow-initial-development-versions
 
 
 workflows:
-  feature:
-    jobs:
-      - build:
-          executor: amd64
-          push: false
-          context: github
-          filters:
-            branches:
-              ignore: master
-
-  continuous:
-    jobs:
-      - build: &rc-build
-          name: Release candidate build (AMD64)
-          executor: amd64
-          push: false
-          context: github
-          filters:
-            branches:
-              only: master
-      - build:
-          <<: *rc-build
-          name: Release candidate build (ARM64)
-          executor: arm64
-
-  tags:
+  release:
     jobs:
       - draft-release:
           name: Create github release
           context: github
-          filters: &filter-tags
+          filters:
+            branches:
+              only: master
+            tags:
+              ignore: /.*/
+
+  feature:
+    jobs:
+      - build: &rc-build
+          name: Feature build (AMD64)
+          executor: amd64
+          filters:
+            branches:
+              ignore: master
+      - build:
+          <<: *rc-build
+          name: Feature build (ARM64)
+          executor: arm64
+
+  tags:
+    jobs:
+      - build: &tag-build
+          name: Tagged AMD64 release
+          context: github
+          filters:
             branches:
               ignore: /.*/
             tags:
               only: /.*/
-      - build:
-          <<: *rc-build
-          name: Tagged AMD64 release
-          push: true
-          filters: *filter-tags
           requires:
             - "Create github release"
+          post-steps:
+            - push-artifacts
       - build:
-          <<: *rc-build
+          <<: *tag-build
           name: Tagged ARM64 release
           executor: arm64
-          push: true
-          filters: *filter-tags
-          requires:
-            - "Create github release"
