@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.6.0
 
-FROM golang:1.21-alpine3.18 AS linuxkit
+FROM golang:1.21-alpine3.20 AS linuxkit
 
 ARG LINUXKIT_VERSION=v1.2.0
 
@@ -21,7 +21,7 @@ RUN go build \
 
 
 
-FROM alpine:3.18.6 AS base
+FROM alpine:3.21.3 AS base
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 
@@ -133,55 +133,59 @@ RUN <<-EOF
 EOF
 
 WORKDIR /usr/src/image/bin
-RUN <<-EOF
-    # Fix coreutils links
-    find . -xtype l -ilname ../usr/bin/coreutils -exec ln -sf coreutils {} \;
+# Fix coreutils links
+RUN find . -xtype l -ilname ../usr/bin/coreutils -exec ln -sf coreutils {} \;
 
+WORKDIR /usr/src/image
+RUN <<-EOF
     # Fix sudo
-    chmod +s /usr/src/image/bin/sudo
+    chmod +s bin/sudo
 
     # Add empty dirs to bind mount
-    mkdir -p /usr/src/image/lib/modules
-    mkdir -p /usr/src/image/src
+    mkdir -p lib/modules
+    mkdir -p src
 
     # setup /etc/ssl
-    rm -rf /usr/src/image/etc/ssl
-    mkdir -p /usr/src/image/etc/ssl/certs/
-    cp -rf /etc/ssl/certs/ca-certificates.crt /usr/src/image/etc/ssl/certs
-    ln -s certs/ca-certificates.crt /usr/src/image/etc/ssl/cert.pem
+    rm -rf etc/ssl
+    mkdir -p etc/ssl/certs/
+    cp -rf /etc/ssl/certs/ca-certificates.crt etc/ssl/certs
+    ln -s certs/ca-certificates.crt etc/ssl/cert.pem
+
+    # Ensure hybrid cgroups
+    sed 's/^#*[:blank:]*rc_cgroup_mode=.*/rc_cgroup_mode=\"hybrid\"/' etc/rc.conf
 
     # setup /usr/local
-    rm -rf /usr/src/image/local
-    ln -s /var/local /usr/src/image/local
+    rm -rf local
+    ln -s /var/local local
+
     # setup /usr/libexec/kubernetes
-    rm -rf /usr/src/image/libexec/kubernetes
-    ln -s /var/lib/rancher/k3s/agent/libexec/kubernetes \
-        /usr/src/image/libexec/kubernetes
+    rm -rf libexec/kubernetes
+    ln -s /var/lib/rancher/k3s/agent/libexec/kubernetes libexec/kubernetes
 
     # cleanup files hostname/hosts
     rm -rf \
-        /usr/src/image/etc/hosts \
-        /usr/src/image/etc/hostname \
-        /usr/src/image/etc/alpine-release \
-        /usr/src/image/etc/apk \
-        /usr/src/image/etc/ca-certificates* \
-        /usr/src/image/etc/os-release
-    ln -s /usr/lib/os-release /usr/src/image/etc/os-release
+        etc/hosts \
+        etc/hostname \
+        etc/alpine-release \
+        etc/apk \
+        etc/ca-certificates* \
+        etc/os-release
+    ln -s /usr/lib/os-release etc/os-release
     rm -rf \
-        /usr/src/image/sbin/apk \
-        /usr/src/image/include \
-        /usr/src/image/lib/apk \
-        /usr/src/image/lib/pkgconfig \
-        /usr/src/image/lib/systemd \
-        /usr/src/image/lib/udev \
-        /usr/src/image/share/apk \
-        /usr/src/image/share/applications \
-        /usr/src/image/share/ca-certificates \
-        /usr/src/image/share/icons \
-        /usr/src/image/share/mkinitfs \
-        /usr/src/image/share/vim/vim*/spell \
-        /usr/src/image/share/vim/vim*/tutor \
-        /usr/src/image/share/vim/vim*/doc
+        sbin/apk \
+        include \
+        lib/apk \
+        lib/pkgconfig \
+        lib/systemd \
+        lib/udev \
+        share/apk \
+        share/applications \
+        share/ca-certificates \
+        share/icons \
+        share/mkinitfs \
+        share/vim/vim*/spell \
+        share/vim/vim*/tutor \
+        share/vim/vim*/doc
 EOF
 
 WORKDIR /output

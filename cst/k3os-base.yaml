@@ -222,10 +222,6 @@ fileExistenceTests:
     path: /usr/src/image/bin/eject
     shouldExist: true
     isExecutableBy: 'any'
-  - name: ed
-    path: /usr/src/image/bin/ed
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: modinfo
     path: /usr/src/image/bin/modinfo
     shouldExist: true
@@ -1166,10 +1162,6 @@ fileExistenceTests:
     path: /usr/src/image/bin/tee
     shouldExist: true
     isExecutableBy: 'any'
-  - name: col
-    path: /usr/src/image/bin/col
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: scriptlive
     path: /usr/src/image/bin/scriptlive
     shouldExist: true
@@ -1950,14 +1942,8 @@ fileExistenceTests:
   - name: bashrc
     path: /usr/src/image/etc/bash/bashrc
     shouldExist: true
-  - name: system-login
-    path: /usr/src/image/etc/pam.d/system-login
-    shouldExist: true
   - name: base-password
     path: /usr/src/image/etc/pam.d/base-password
-    shouldExist: true
-  - name: system-local-login
-    path: /usr/src/image/etc/pam.d/system-local-login
     shouldExist: true
   - name: base-account
     path: /usr/src/image/etc/pam.d/base-account
@@ -2465,10 +2451,6 @@ fileExistenceTests:
     path: /usr/src/image/sbin/showmount
     shouldExist: true
     isExecutableBy: 'any'
-  - name: pwhistory_helper
-    path: /usr/src/image/sbin/pwhistory_helper
-    shouldExist: true
-    isExecutableBy: 'any'
   - name: connman-vpnd
     path: /usr/src/image/sbin/connman-vpnd
     shouldExist: true
@@ -2559,10 +2541,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: logsave
     path: /usr/src/image/sbin/logsave
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: unix_update
-    path: /usr/src/image/sbin/unix_update
     shouldExist: true
     isExecutableBy: 'any'
   - name: logread
@@ -2923,10 +2901,6 @@ fileExistenceTests:
     isExecutableBy: 'any'
   - name: lvconvert
     path: /usr/src/image/sbin/lvconvert
-    shouldExist: true
-    isExecutableBy: 'any'
-  - name: rc
-    path: /usr/src/image/sbin/rc
     shouldExist: true
     isExecutableBy: 'any'
   - name: insmod
