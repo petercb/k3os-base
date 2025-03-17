@@ -108,8 +108,6 @@ workflows:
               ignore: /.*/
             tags:
               only: /.*/
-          requires:
-            - "Create github release"
           post-steps:
             - push-artifacts
       - build:
