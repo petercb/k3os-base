@@ -48,6 +48,7 @@ RUN <<-EOF
         e2fsprogs \
         e2fsprogs-extra \
         efibootmgr \
+        etcd-ctl \
         eudev \
         findutils \
         gcompat \
