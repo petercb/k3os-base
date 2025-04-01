@@ -1,0 +1,13 @@
+diff --git a/etc/conf.d/connman b/etc/conf.d/connman
+index c5d9939..c19e4f5 100644
+--- a/etc/conf.d/connman
++++ b/etc/conf.d/connman
+@@ -4,7 +4,7 @@
+ #cfgfile=/etc/connman/main.conf
+
+ # Additional arguments to pass to connmand.
+-#command_args=
++command_args="-r"
+
+ # Number of milliseconds to wait after starting and check that daemon is
+ # still running.

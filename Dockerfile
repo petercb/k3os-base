@@ -111,7 +111,7 @@ COPY --from=linuxkit /output/metadata /sbin/metadata
 FROM base AS output
 
 # hadolint ignore=DL3018
-RUN apk add --no-cache findutils tar
+RUN apk add --no-cache findutils patch tar
 
 COPY --from=root /bin /usr/src/image/bin/
 COPY --from=root /lib /usr/src/image/lib/
@@ -119,10 +119,18 @@ COPY --from=root /sbin /usr/src/image/sbin/
 COPY --from=root /etc /usr/src/image/etc/
 COPY --from=root /usr /usr/src/image/usr/
 
-# Fix up more stuff to move everything to /usr
+COPY patches /tmp/patches
+
 WORKDIR /usr/src/image
 # hadolint ignore=DL4006,SC2086
 RUN <<-EOF
+    echo "Applying patches"
+    for p in /tmp/patches/*.patch; do
+        echo "Applying ${p}"
+        patch -p1 -i "${p}"
+    done
+
+    # Fix up more stuff to move everything to /usr
     for i in usr/*; do
         if [ -e "$(basename $i)" ]; then
             tar cf - "$(basename $i)" | tar xf - -C usr
@@ -151,9 +159,6 @@ RUN <<-EOF
     mkdir -p etc/ssl/certs/
     cp -rf /etc/ssl/certs/ca-certificates.crt etc/ssl/certs
     ln -s certs/ca-certificates.crt etc/ssl/cert.pem
-
-    # Ensure hybrid cgroups
-    sed 's/^#*[:blank:]*rc_cgroup_mode=.*/rc_cgroup_mode=\"hybrid\"/' etc/rc.conf
 
     # setup /usr/local
     rm -rf local

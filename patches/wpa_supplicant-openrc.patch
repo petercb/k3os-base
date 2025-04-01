@@ -1,0 +1,10 @@
+diff --git a/etc/conf.d/wpa_supplicant b/etc/conf.d/wpa_supplicant
+index afe5102..d737cc2 100644
+--- a/etc/conf.d/wpa_supplicant
++++ b/etc/conf.d/wpa_supplicant
+@@ -7,5 +7,5 @@ wpa_supplicant_args=""
+ # The dbus interface will be enabled by default if wpa_supplicant.conf is
+ # missing. use wpa_supplicant_dbus to explicitly enable/disable dbus interface
+
+-#wpa_supplicant_dbus=no
++wpa_supplicant_dbus=yes
