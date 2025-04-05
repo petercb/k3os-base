@@ -11,3 +11,18 @@ index c5d9939..c19e4f5 100644
 
  # Number of milliseconds to wait after starting and check that daemon is
  # still running.
+diff --git a/etc/init.d/connman b/etc/init.d/connman
+index 8fb0b55..49e7118 100644
+--- a/etc/init.d/connman
++++ b/etc/init.d/connman
+@@ -23,5 +23,10 @@ supervise_daemon_args=" $supervise_daemon_args"
+ depend() {
+ 	need dbus
+ 	provide net
++	after dbus
++}
++
++start_pre() {
++	sleep 2
+ }
+ 
