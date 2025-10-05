@@ -2,7 +2,7 @@
 
 FROM golang:1.21-alpine3.20 AS linuxkit
 
-ARG LINUXKIT_VERSION=v1.5.3
+ARG LINUXKIT_VERSION=v1.8.2
 
 ENV CGO_ENABLED=0
 ENV GO111MODULE off
@@ -21,7 +21,7 @@ RUN go build \
 
 
 
-FROM alpine:3.21.3 AS base
+FROM alpine:3.22.1 AS base
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 
