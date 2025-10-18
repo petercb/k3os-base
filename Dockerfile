@@ -21,7 +21,7 @@ RUN go build \
 
 
 
-FROM alpine:3.22.1 AS base
+FROM alpine:3.22.2 AS base
 SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 
 
@@ -43,6 +43,7 @@ RUN <<-EOF
         cryptsetup \
         curl \
         dbus \
+        device-mapper \
         dmidecode \
         dosfstools \
         e2fsprogs \

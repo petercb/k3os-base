@@ -223,7 +223,7 @@ fileExistenceTests:
     shouldExist: true
     isExecutableBy: 'any'
   - name: modinfo
-    path: /usr/src/image/bin/modinfo
+    path: /usr/src/image/sbin/modinfo
     shouldExist: true
     isExecutableBy: 'any'
   - name: tset
@@ -435,7 +435,7 @@ fileExistenceTests:
     shouldExist: true
     isExecutableBy: 'any'
   - name: lsmod
-    path: /usr/src/image/bin/lsmod
+    path: /usr/src/image/sbin/lsmod
     shouldExist: true
     isExecutableBy: 'any'
   - name: lzfgrep
@@ -1927,9 +1927,6 @@ fileExistenceTests:
   - name: logrotate
     path: /usr/src/image/etc/periodic/daily/logrotate
     shouldExist: true
-  - name: kms.conf
-    path: /usr/src/image/etc/modprobe.d/kms.conf
-    shouldExist: true
   - name: blacklist.conf
     path: /usr/src/image/etc/modprobe.d/blacklist.conf
     shouldExist: true
@@ -1943,25 +1940,25 @@ fileExistenceTests:
     path: /usr/src/image/etc/bash/bashrc
     shouldExist: true
   - name: base-password
-    path: /usr/src/image/etc/pam.d/base-password
+    path: /usr/src/image/lib/pam.d/base-password
     shouldExist: true
   - name: base-account
-    path: /usr/src/image/etc/pam.d/base-account
+    path: /usr/src/image/lib/pam.d/base-account
     shouldExist: true
   - name: base-auth
-    path: /usr/src/image/etc/pam.d/base-auth
+    path: /usr/src/image/lib/pam.d/base-auth
     shouldExist: true
   - name: su
-    path: /usr/src/image/etc/pam.d/su
+    path: /usr/src/image/lib/pam.d/su
     shouldExist: true
   - name: base-session-noninteractive
-    path: /usr/src/image/etc/pam.d/base-session-noninteractive
+    path: /usr/src/image/lib/pam.d/base-session-noninteractive
     shouldExist: true
   - name: base-session
-    path: /usr/src/image/etc/pam.d/base-session
+    path: /usr/src/image/lib/pam.d/base-session
     shouldExist: true
   - name: other
-    path: /usr/src/image/etc/pam.d/other
+    path: /usr/src/image/lib/pam.d/other
     shouldExist: true
   - name: udhcpd.conf
     path: /usr/src/image/etc/udhcpd.conf
